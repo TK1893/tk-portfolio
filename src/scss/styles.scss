@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'JapaneseFont';
+  src: url('./fonts/Japanese.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$pri-font: 'JapaneseFont', sans-serif;
+$sec-font: 'Bebas Neue', sans-serif;
+$ter-font: 'Satoshi', sans-serif;
+
+$sec-font: 'Roboto', sans-serif;
+$primary-color: #ff00a2;
+@import 'bootstrap/scss/bootstrap';
+
+// /* Stile für den Toggler mit den drei bunten Strichen */
+// .navbar-toggler.span-wrap {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   width: 40px; /* Größe des Toggler-Icons */
+//   height: 30px; /* Höhe des Toggler-Icons */
+// }
+
+// .custom-hr {
+//   border: none;
+//   width: 100%;
+//   height: 2px; /* Dicke der Striche */
+//   margin: 0;
+//   opacity: 1;
+// }
+
+// /* Farben der Striche */
+// .hr-1 {
+//   background-color: red;
+// }
+// .hr-2 {
+//   background-color: green;
+// }
+// .hr-3 {
+//   background-color: blue;
+// }
+
+// /* Entferne Standardabstände und Rahmen des Navbar-Togglers */
+// .navbar-toggler {
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 70px; /* Kann angepasst werden */
+//   height: 70px; /* Kann angepasst werden */
+// }
+
+// /* Styling der Navbar */
+// .navbar-brand {
+//   color: $primary-color;
+//   font-family: $pri-font;
+//   font-size: 2.5rem;
+//   @media screen and (min-width: 540px) {
+//     font-size: 4.2rem;
+//   }
+// }
+
+// /* Offcanvas Menü Titel */
+// .offcanvas-title {
+//   color: $primary-color;
+//   font-family: $pri-font;
+//   font-size: 36px;
+//   @media screen and (min-width: 540px) {
+//     font-size: 4.2rem;
+//   }
+// }
+
+// ******************************************************
+// -- MAIN -------------
+// *********************************************************
+.b-main {
+  height: 500px;
+  width: 100vw;
+  background-color: black;
+}
+// ******************************************************
+// -- OFFCANVAS --
+// *********************************************************
+.close-b-container {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+}
+.btn-close {
+  justify-self: end;
+
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  opacity: 1;
+  // scale: 4;
+  width: 40px; /* Breite des Buttons */
+  height: 40px; /* Höhe des Buttons */
+  background-size: 30px 30px; /* Größe des eingebetteten SVG-Bilds */
+  padding-right: 1rem; /* Falls mehr Platz vom Rand benötigt wird */
+  padding-left: 0;
+}
+.btn-close:hover {
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff00a2'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+.offcanvas-header {
+  background-color: black;
+  padding-right: 1rem;
+  justify-content: flex-start; /* Elemente nach links ausrichten */
+}
+
+.offcanvas-title {
+  color: $primary-color;
+  font-family: $pri-font;
+  font-size: 2.4rem;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.offcanvas-body {
+  background-color: black;
+  background-color: greenyellow;
+}
+.nav-link {
+  color: white;
+  font-family: $ter-font;
+  text-transform: uppercase;
+  font-size: 3rem;
+  &:hover {
+    color: $primary-color;
+  }
+  &.active {
+    color: $primary-color !important;
+  }
+}
+.dropdown-toggle {
+  color: white;
+
+  &.show {
+    color: $primary-color !important;
+  }
+}
+
+.dropdown-menu.show {
+  background-color: transparent;
+  border-color: $primary-color;
+  border-color: transparent;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: $ter-font;
+  text-transform: uppercase;
+  font-size: 2rem;
+  &:hover {
+    color: $primary-color;
+    background-color: transparent;
+  }
+  &.active {
+    color: $primary-color !important;
+  }
+}
+.dropdown-divider,
+.divider {
+  background-color: $primary-color;
+}
+
+.nav {
+  background-color: black;
+  div {
+    background-color: black;
+  }
+}
+// /* Styling der Navbar */
+.navbar-brand {
+  color: $primary-color;
+  font-family: $pri-font;
+  font-size: 2.4rem;
+  @media screen and (min-width: 540px) {
+    font-size: 4.2rem;
+  }
+}
+.container-fluid {
+  background-color: black;
+}

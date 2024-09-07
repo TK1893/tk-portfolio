@@ -1,0 +1,7 @@
+mein-Projekt/ 
+├── src/ 
+│ 
+├─── js/ 
+│ 
+│ 
+└─── main.js │ ├── scss/ │ │ └── styles.scss │ └── index.html ├── package-lock.json └── package.json
