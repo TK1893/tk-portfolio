@@ -1,0 +1,11 @@
+mein-Projekt/ 
+├── src/ 
+│ 
+├─── js/ 
+│ 
+│ 
+└─── main.js │ ├── scss/ │ │ └── styles.scss │ └── index.html ├── package-lock.json └── package.json
+
+
+Farbpalette:
+https://www.color-hex.com/color-palette/861
