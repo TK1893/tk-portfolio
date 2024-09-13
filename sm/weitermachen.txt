@@ -1,0 +1,6 @@
+Das Gesamt-Layout wurde auf der Seite meet.html gestaltet:
+Sprich die richtige Navigation mit den ausgetsalteten links und dem richtigen Abstaänden.
+Auch der Footer wurde dort angefangen.
+
+Weiter geht es mit dem Footer der noch richtig gesetzt werden muss.
+Ausgangsbasis ist auch hier meet.html

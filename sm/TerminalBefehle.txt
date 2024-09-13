@@ -31,7 +31,7 @@ git push -u origin main
 (5) KOMBIBEFEHL (1) bis (3)
 ----------------------------------------------
 git add .
-git commit -m "Update Meet App Ex.4-10"
+git commit -m "Update"
 git branch -M main
 git push -u origin main
 npm run deploy

@@ -1,0 +1,392 @@
+// src\scss\styles.scss
+@import url('./fonts/satoshi.css');
+@font-face {
+  font-family: 'JapaneseFont';
+  src: url('./fonts/Japanese.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$pri-font: 'JapaneseFont', sans-serif;
+$sec-font: 'Bebas Neue', sans-serif;
+$ter-font: 'Satoshi-Variable';
+$p-font: 'Roboto', system-ui;
+
+$primary-color: #ff00a2;
+
+$toggler-color-1: #00aba9; // Farbe für den ersten Strich des Toggler-Buttons
+$toggler-color-2: #ff00a2; // Farbe für den zweiten Strich des Toggler-Buttons
+$toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
+
+@import 'bootstrap/scss/bootstrap';
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: $sec-font;
+  color: white;
+}
+
+// *********************************************************
+// -- MAIN -------------
+// *********************************************************
+.b-main {
+  margin-top: 100px;
+  height: 80vh;
+}
+// src\scss\index.scss
+// *********************************************************
+// ---- INDEX ----------------------------------------------
+// *********************************************************
+// ** Version 1 ***********************
+// .animated-text {
+//   position: relative;
+//   font-size: 5rem; // Textgröße
+//   font-weight: bold;
+//   color: white;
+//   white-space: nowrap;
+//   overflow: hidden; // Verhindert, dass Text außerhalb des Containers sichtbar wird
+//   opacity: 0; // Startet unsichtbar
+//   transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
+//   animation: slideIn 3s ease-in-out forwards;
+//   animation-delay: calc(var(--index) * 0.5s); // Verzögert jede Zeile leicht
+// }
+
+// // Animation für das Wabbern und Stoppen
+// @keyframes slideIn {
+//   0% {
+//     transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
+//     opacity: 0; // Zu Beginn unsichtbar
+//   }
+//   10% {
+//     opacity: 1; // Text wird sichtbar, während er ins Bild fährt
+//   }
+//   70% {
+//     transform: translateX(0); // Stößt an den linken Rand
+//   }
+//   80% {
+//     transform: translateX(-10px); // Leichtes Wabbern nach links
+//   }
+//   90% {
+//     transform: translateX(5px); // Zurück nach rechts
+//   }
+//   100% {
+//     transform: translateX(0); // Am linken Rand stehenbleiben
+//     opacity: 1; // Am Ende sichtbar bleiben
+//   }
+// }
+
+// ** Version 2 ***********************
+
+.animated-text {
+  padding: 0;
+  position: relative;
+  font-size: 5rem; // Textgröße
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden; // Verhindert, dass Text außerhalb des Containers sichtbar wird
+  opacity: 0; // Startet unsichtbar
+  transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
+  animation: slideIn 3s ease-in-out forwards;
+  animation-delay: calc(var(--index) * 0.5s); // Verzögert jede Zeile leicht
+}
+
+// Animation für das Einblenden und Überqueren des Bildschirms
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
+    opacity: 0; // Zu Beginn unsichtbar
+  }
+  10% {
+    opacity: 1; // Text wird sichtbar, während er ins Bild fährt
+  }
+  70% {
+    transform: translateX(0); // Stößt an den linken Rand
+  }
+  80% {
+    transform: translateX(-10px); // Leichtes Wabbern nach links
+  }
+  90% {
+    transform: translateX(5px); // Zurück nach rechts
+  }
+  100% {
+    transform: translateX(0); // Am linken Rand stehenbleiben
+    opacity: 1; // Am Ende sichtbar bleiben
+  }
+}
+
+// Neue Animation für das kontinuierliche Wabbern
+@keyframes wobble {
+  0% {
+    transform: translateX(0); // Start bei Normalposition
+  }
+  50% {
+    transform: translateX(-5px); // Leichtes Wabbern nach links
+  }
+  100% {
+    transform: translateX(0); // Zurück zur Normalposition
+  }
+}
+
+// Animationen und Farben für die Zeilen
+.animated-text-1 {
+  color: #00aba9;
+}
+
+.animated-text-2 {
+  color: white; // Normale Farbe für die zweite Zeile
+}
+
+.animated-text-3 {
+  color: $toggler-color-2;
+}
+
+.animated-text-4 {
+  color: white; // Normale Farbe für die vierte Zeile
+}
+
+.animated-text-5 {
+  color: $toggler-color-3;
+}
+// Wende die Wabbern-Animation nur auf das letzte Element an
+.wobble-text {
+  animation: slideIn 3s ease-in-out forwards, wobble 1s ease-in-out infinite;
+  animation-delay: calc(var(--index) * 0.5s), calc(var(--index) * 0.5s + 3s); // Verzögert jede Zeile leicht
+}
+
+// *********************************************************
+// ---- ABOUT ----------------------------------------------
+// *********************************************************
+.marquee-text {
+  font-family: $sec-font;
+}
+.about-container {
+  p {
+    font-family: $ter-font;
+    font-weight: 500;
+  }
+  h1 {
+    font-family: $sec-font;
+  }
+}
+.spacer {
+  height: 15vh;
+}
+// **** Laufschrift ****
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; // Breite auf Container anpassen
+  height: 200px; // Höhe einstellen, um den Text sichtbar zu machen
+  border: 1px solid #ccc;
+  border: none;
+}
+
+.marquee-text {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  font-size: 10rem; // Textgröße anpassen
+  color: white; // Farbe für besseren Kontrast (optional)
+}
+
+// Animation Definition
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+// *********************************************************
+// -- HEADER -------------
+// *********************************************************
+
+// ************************
+// -- NAVBAR -------------
+// ************************
+
+// **** Brand ****
+.navbar-brand {
+  color: $primary-color;
+  font-family: $pri-font;
+  font-size: 2.4rem;
+  &:hover {
+    color: white;
+  }
+  &.active {
+    color: $primary-color !important;
+  }
+  &.show {
+    color: $primary-color !important;
+  }
+}
+
+// ***********************************
+// -- CUSTOM TOGGLER --
+// ***********************************
+
+// **** BUTTON ****
+.navbar-toggler {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem; /* Kann angepasst werden */
+  height: 2rem; /* Kann angepasst werden */
+}
+
+// **** STRICH-CONTAINER (div) ****
+.navbar-toggler .tripple-line-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 2rem; /* Größe des Toggler-Icons */
+  height: 1.8rem; /* Höhe des Toggler-Icons */
+}
+// **** Striche (alle) ****
+.custom-hr {
+  padding: 0 0.2rem;
+  border: none;
+  width: 100%;
+  height: 4px; /* Dicke der Striche */
+  margin: 0;
+  opacity: 1;
+}
+
+// **** Striche (einzeln) ****
+.hr-1 {
+  background-color: #00aba9;
+}
+.hr-2 {
+  background-color: $primary-color;
+}
+.hr-3 {
+  background-color: #f09609;
+}
+
+// *********************************************************
+// -- OFFCANVAS --
+// *********************************************************
+.offcanvas-body {
+  background-color: black;
+}
+.close-b-container {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+}
+.btn-close {
+  justify-self: end;
+
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  opacity: 1;
+  // scale: 4;
+  width: 40px; /* Breite des Buttons */
+  height: 40px; /* Höhe des Buttons */
+  background-size: 30px 30px; /* Größe des eingebetteten SVG-Bilds */
+  padding-right: 1rem; /* Falls mehr Platz vom Rand benötigt wird */
+  padding-left: 0;
+}
+.btn-close:hover {
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff00a2'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+.offcanvas-header {
+  background-color: black;
+  padding-right: 1rem;
+  justify-content: flex-start; /* Elemente nach links ausrichten */
+}
+
+.offcanvas-title {
+  color: $primary-color;
+  font-family: $pri-font;
+  font-size: 2.4rem;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.nav-link {
+  color: white;
+  font-family: $ter-font;
+  text-transform: uppercase;
+  font-size: 3rem;
+  &:hover {
+    color: $primary-color;
+  }
+  &.active {
+    color: $primary-color !important;
+  }
+}
+.dropdown-toggle {
+  color: white;
+
+  &.show {
+    color: $primary-color !important;
+  }
+}
+
+.dropdown-menu.show {
+  background-color: transparent;
+  border-color: $primary-color;
+  border-color: transparent;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: $ter-font;
+  text-transform: uppercase;
+  font-size: 2rem;
+  &:hover {
+    color: $primary-color;
+    background-color: transparent;
+  }
+  &.active {
+    color: $primary-color !important;
+  }
+}
+.dropdown-divider,
+.divider {
+  background-color: $primary-color;
+}
+
+.nav {
+  background-color: black;
+  div {
+    background-color: black;
+  }
+}
+
+// *********************************************************
+// -- FOOTER --
+// *********************************************************
+footer {
+  background-color: $primary-color;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}

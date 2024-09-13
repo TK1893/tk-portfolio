@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script type="module" src="js/kraftflixclient.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tobias Kraft</a>
+            <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <div class="tripple-line-container" id="tripple-line-container">
+                    <hr class="custom-hr hr-1">
+                    <hr class="custom-hr hr-2">
+                    <hr class="custom-hr hr-3">
+                </div>
+            </button>
+
+            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tobias Kraft</h5>
+                    <button type="button" class="btn-close px-1" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    <hr class="divider">
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <!-- Links normal -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <!-- Links Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="code.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Code
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="meet.html">Meet</a></li>
+                                <li><a class="dropdown-item active" href="kraftflix.html">KraftFlix</a>
+                                </li>
+                                <li><a class="dropdown-item" href="kraftflixclient.html">KraftFlix Client</a></li>
+                                <li><a class="dropdown-item" href="#">Poke-App</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./code.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cinematography
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">T-Mobile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Credit Suisse</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Mercedes Benz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hugo Boss</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Toyota</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Haupt-Inhalt + Footer -->
+    <div class="container main-container">
+
+        <!-- Lauftext -->
+        <div class="row main-row my-5">
+            <div class="col-11 main-col align-content-center">
+                <div class="marquee-container">
+                    <p class="marquee-text"> KraftFlix - Movies </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kraftflix -->
+        <div class="row main-row site-heading-container">
+            <div class="col-11 main-col site-heading">
+
+                <!-- Karussel -->
+                <div class="row justify-content-center my-2">
+                    <div class="col-12 gallery">
+
+                        <div id="carouselExampleControls" class="carousel slide mb-4" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 " src="./images/kraftflix-01.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/kraftflix-02.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/kraftflix-03.png" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/kraftflix-04.png" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/kraftflix-05.png" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/kraftflix-06.png" alt="Third slide">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Inhalt -->
+                <!-- Überschrift -->
+                <h1>
+                    KraftFlix App
+                </h1>
+                <!-- Synopsis -->
+                <section class="mb-0">
+                    <p>
+                        Kraftflix is a full-stack web application that allows movie enthusiasts to browse a movie
+                        database
+                        for information about different movies, directors, and genres. Users can create profiles, save
+                        their
+                        favorite movies, and manage their personal data.
+                        The application is built using the MERN stack (MongoDB, Express, React and Node.js).
+                        The backend provides a REST API & MongoDB database.
+                        The frontend offers a responsive, user-friendly interface.
+                    </p>
+                    <p>
+                        The Kraftflix project is showcasing skills in both server-side and client-side development.
+                        The backend, built using Node.js, Express, and MongoDB, will handle API requests, user
+                        authentication, and data storage.
+                        The frontend, built using React, will provide users with an interactive, responsive experience,
+                        allowing them to explore and manage movie information and their personal favorites list.
+                    </p>
+                </section>
+
+                <!-- Backend -->
+                <section>
+                    <!-- Zusammenfassung -->
+                    <h3>
+                        Backend
+                    </h3>
+                    <p>The backend of Kraftflix is focused on creating the server-side components of the application.
+                        This
+                        includes setting up a REST API that interfaces with a MongoDB database to store movie data, user
+                        information, and perform CRUD (Create, Read, Update, Delete) operations. The backend will handle
+                        data requests made by the frontend and ensure user data security and authentication.
+                    </p>
+                    <!-- Tabellen -->
+                    <h4>
+                        Key Features
+                    </h4>
+                    <ul class="list-group" data-bs-theme="dark">
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">Movie Information</h5>
+                            </div>
+                            <p class="mb-1 unter-item"> Return a list of all movies</p>
+                            <hr class="my-2">
+                            <p class="mb-1">Retrieve detailed data on a single movie (title, description, genre,
+                                director, image)</p>
+                            <hr class="my-2">
+                            <p class="mb-2"> Retrieve information about genres (e.g., “Thriller”) and directors (bio,
+                                birth year, etc.)
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">User Management</h5>
+                            </div>
+                            <p class="mb-1 unter-item"> Allow new users to register.</p>
+                            <hr class="my-2">
+                            <p class="mb-1">Allow users to update their profile (username, password, email, date of
+                                birth).
+                            </p>
+                            <hr class="my-2">
+                            <p class="mb-1">Users can add or remove movies from their favorite list.
+
+                            </p>
+                            <p class="mb-2"> Enable users to deregister their account.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>
+                        Technical Requirements
+                    </h4>
+                    <ul class="list-group" data-bs-theme="dark">
+                        <li class="list-group-item">Node.js, Express, and MongoDB are used for server-side development.
+
+                        </li>
+                        <li class="list-group-item">RESTful architecture with well-defined endpoints.
+
+                        </li>
+                        <li class="list-group-item">Middleware modules (e.g., body-parser, morgan) are implemented.
+
+                        </li>
+                        <li class="list-group-item">Authentication using HTTP and JWT tokens.
+
+                        </li>
+                        <li class="list-group-item">Data validation and security protocols are mandatory.
+
+                        </li>
+                        <li class="list-group-item">The backend must be deployed on Heroku and the source code hosted on
+                            GitHub.
+
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Frontend -->
+                <section>
+                    <!-- Zusammenfassung -->
+                    <h3>
+                        Frontend
+                    </h3>
+                    <p>
+                        The frontend of Kraftflix will be a single-page application (SPA) built using React. It will
+                        interface with the backend API to display movie data, manage user sessions, and enable users to
+                        modify their profiles and movie preferences. The frontend will provide a polished, responsive
+                        user experience that can be accessed on any device.
+                    </p>
+                    <!-- Tabellen -->
+                    <h4>
+                        Views & Features
+                    </h4>
+                    <ul class="list-group" data-bs-theme="dark">
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">Main View</h5>
+                            </div>
+                            <p class="mb-1 unter-item"> Display a list of all movies with search and filter
+                                functionality.
+                            </p>
+                            <hr class="my-2">
+                            <p class="mb-1">Ability to select a movie for more detailed information.
+                            </p>
+                            <hr class="my-2">
+                            <p class="mb-2"> Provide navigation to the profile view and allow users to log out.
+
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">Single Movie View</h5>
+                            </div>
+                            <p class="mb-1 unter-item">
+                                Show detailed data about a selected movie (description, genre, director, image).
+                            </p>
+                            <hr class="my-2">
+                            <p class="mb-2">Allow users to add or remove the movie from their favorites list.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">Login View</h5>
+                            </div>
+                            <p class="mb-2">Users can log in with their username and password.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">Signup View</h5>
+                            </div>
+                            <p class="mb-2">New users can register by providing a username, password, email, and date of
+                                birth.
+
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2 mt-1">Profile View</h5>
+                            </div>
+                            <p class="mb-1 unter-item">
+                                Show user details and allow them to update their profile information.
+                            </p>
+                            <hr class="my-2">
+                            <p class="mb-2">
+                                Display the user’s favorite movies and provide the option to remove movies from the list
+                                or deregister the account.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h4>
+                        Technical Requirements
+                    </h4>
+                    <ul class="list-group" data-bs-theme="dark">
+                        <li class="list-group-item">
+                            React is used with ES2015+ for modern JavaScript development.
+                        </li>
+                        <li class="list-group-item">
+                            Parcel is employed as the build tool.
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap ensures a responsive UI.
+                        </li>
+                        <li class="list-group-item">
+                            State management can optionally use React Redux for features like movie filtering.
+                        </li>
+                        <li class="list-group-item">
+                            The UI will be deployed online, making it accessible from any device.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- App-Links -->
+                <section>
+                    <div class="footer-stripes my-5">
+                        <div class="stripe stripe-1"></div>
+                        <div class="stripe stripe-2"></div>
+                        <div class="stripe stripe-3"></div>
+                    </div>
+                    <h3>
+                        Please check out the Kraftflix Live App ...
+                    </h3>
+                    <a href="https://kraftflix.netlify.app/"> KraftFlix Live App</a>
+                    <h3>
+                        Please check out the KraftFlix Code on Github ...
+                    </h3>
+                    <a href="https://github.com/TK1893/kraftFlix-client"> KraftFlix Project - Backend</a>
+                    <br>
+                    <a href="https://github.com/TK1893/Kraftflix-React" class="mb-5"> KraftFlix Project - Frontend</a>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row main-row site-heading-container mb-1 mt-5">
+            <div class="col-11 main-col site-heading">
+                <footer class="footer ">
+                    <div class="footer-stripes">
+                        <div class="stripe stripe-1"></div>
+                        <div class="stripe stripe-2"></div>
+                        <div class="stripe stripe-3"></div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="social-icons">
+                            <a href="https://github.com/your-profile" target="_blank" class="social-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/your-profile/" target="_blank" class="social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <p>&copy; 2024 Mein Portfolio</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

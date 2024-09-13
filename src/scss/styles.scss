@@ -1,3 +1,7 @@
+// src\scss\styles.scss
+@import url('./fonts/satoshi.css');
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
 @font-face {
   font-family: 'JapaneseFont';
   src: url('./fonts/Japanese.otf') format('opentype');
@@ -7,7 +11,8 @@
 
 $pri-font: 'JapaneseFont', sans-serif;
 $sec-font: 'Bebas Neue', sans-serif;
-$ter-font: 'Satoshi', sans-serif;
+$ter-font: 'Satoshi-Variable';
+$p-font: 'Roboto', system-ui;
 
 $primary-color: #ff00a2;
 
@@ -40,11 +45,6 @@ body {
   font-family: $sec-font;
   color: white;
 }
-// .body-cont {
-//   // background-color: black;
-//   // width: 90vw;
-//   // padding: 0;
-// }
 
 // *********************************************************
 // -- MAIN -------------
@@ -53,6 +53,7 @@ body {
   margin-top: 100px;
   height: 80vh;
 }
+// src\scss\index.scss
 // *********************************************************
 // ---- INDEX ----------------------------------------------
 // *********************************************************
@@ -176,6 +177,18 @@ body {
 // *********************************************************
 // ---- ABOUT ----------------------------------------------
 // *********************************************************
+.marquee-text {
+  font-family: $sec-font;
+}
+.about-container {
+  p {
+    font-family: $ter-font;
+    font-weight: 500;
+  }
+  h1 {
+    font-family: $sec-font;
+  }
+}
 .spacer {
   height: 15vh;
 }
@@ -196,15 +209,6 @@ body {
   animation: marquee 10s linear infinite;
   font-size: 10rem; // Textgröße anpassen
   color: white; // Farbe für besseren Kontrast (optional)
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%); // Start von rechts
-  }
-  100% {
-    transform: translateX(-100%); // Ende links
-  }
 }
 
 // Animation Definition
@@ -381,10 +385,72 @@ body {
 // *********************************************************
 // -- FOOTER --
 // *********************************************************
-footer {
-  background-color: $primary-color;
-  p {
-    padding: 0;
-    margin: 0;
+// footer {
+//   background-color: $primary-color;
+//   p {
+//     padding: 0;
+//     margin: 0;
+//   }
+// }
+
+.footer {
+  background-color: black;
+  color: $primary-color;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Stellt sicher, dass der Footer über anderem Inhalt liegt */
+  // margin-top: 1rem;
+  // Fügt zusätzlichen Abstand hinzu, falls erforderlich
+  .footer-stripes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem; // Abstand zwischen den Streifen und dem Footer-Inhalt
+
+    .stripe {
+      width: 100%;
+      height: 3px; // Dicke der Streifen
+      margin-bottom: 6px; // Abstand zwischen den Streifen
+    }
+
+    .stripe-1 {
+      background-color: $toggler-color-1;
+    }
+
+    .stripe-2 {
+      background-color: $toggler-color-2;
+    }
+
+    .stripe-3 {
+      background-color: $toggler-color-3;
+      margin-bottom: 0; // Kein Abstand nach dem letzten Streifen
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px; // Breite der Bootstrap-Container-Klasse
+    margin: 0 auto; // Zentriert den Container
+  }
+
+  .social-icons {
+    margin-bottom: 0.5rem;
+
+    .social-icon {
+      color: $primary-color;
+      font-size: 1.2rem;
+      margin: 0 1rem;
+      transition: color 0.3s;
+      text-decoration: none; /* Entfernt Unterstreichung */
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
