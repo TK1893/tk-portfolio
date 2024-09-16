@@ -12,10 +12,13 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <nav class="navbar fixed-top">
-        <div class="container">
+        <div class="container navigation">
+            <!-- BRAND -->
             <a class="navbar-brand" href="index.html">Tobias Kraft</a>
+
+            <!-- BUTTON TOGGLER -->
             <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <div class="tripple-line-container" id="tripple-line-container">
@@ -25,6 +28,7 @@
                 </div>
             </button>
 
+            <!-- OFF-CANVAS -->
             <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -36,7 +40,7 @@
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <!-- Links normal -->
+                        <!-- MENÜ-LINKS (Hauptmenü-Links) -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -47,10 +51,10 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
 
-                        <!-- Links Dropdown -->
+                        <!-- CODE (Untermenü-Links) -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="code.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Code
                             </a>
                             <ul class="dropdown-menu">
@@ -66,17 +70,18 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="kraftflixclient.html">KraftFlix Client</a></li>
+                                <li><a class="dropdown-item" href="kraftflixclient.html">KraftFlix Client</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="pokeapp.html">Poke-App</a></li>
+                                <li><a class="dropdown-item" href="meet.html">Poke-App</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                             </ul>
                         </li>
-
+                        <!-- CLIENTS & REFERENZES (Untermenü-Links) -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -148,49 +153,61 @@
                             </ul>
                         </li>
                     </ul>
-                    <footer class="footer mt-3">
-                        <div class="footer-stripes">
-                            <div class="stripe stripe-1"></div>
-                            <div class="stripe stripe-2"></div>
-                            <div class="stripe stripe-3"></div>
-                        </div>
-                        <div class="container text-center">
-                            <div class="social-icons">
-                                <a href="https://github.com/your-profile" target="_blank" class="social-icon">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/your-profile/" target="_blank" class="social-icon">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                                <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
+                    <div class="container footer mt-5 mb-3 mx-0">
+                        <!-- STRIPES -->
+                        <div class="row footer-stripes-row">
+                            <div class="col footer-stripes-col footer-stripes mx-0">
+                                <div class="stripe stripe-1"></div>
+                                <div class="stripe stripe-2"></div>
+                                <div class="stripe stripe-3"></div>
                             </div>
-                            <p>&copy; 2024 Mein Portfolio</p>
                         </div>
-                    </footer>
+
+                        <!-- OFFCANVAS FOOTER -->
+                        <div class="row footer-content-row align-items-center justify-content-center">
+                            <div class="col text-start logo ms-1">
+                                <a class="a-logo" href="index.html">Tobias Kraft</a>
+                                <!-- <span class="logo">Tobias Kraft</span> -->
+                            </div>
+                            <div class="col text-end social-icons-container me-1">
+                                <div class="social-icons d-inline-flex">
+                                    <a href="https://github.com/TK1893" target="_blank" class="social-icon">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tobias-kraft-910642116/" target="_blank"
+                                        class="social-icon">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/your-profile/" target="_blank"
+                                        class="social-icon">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Haupt-Inhalt + Footer -->
+    <!-- MAIN CONTENT-->
     <div class="container main-container">
 
-        <!-- Lauftext -->
+        <!-- LAUF-TEXT -->
         <div class="row main-row my-5">
-            <div class="col-11 main-col align-content-center">
+            <div class="col-11 col-lg-10 main-col align-content-center">
                 <div class="marquee-container">
                     <p class="marquee-text"> Meet - Coding Events</p>
                 </div>
             </div>
         </div>
 
-        <!-- Meet -->
+        <!-- MEET -->
         <div class="row main-row site-heading-container">
-            <div class="col-11 main-col site-heading">
+            <div class="col-11 col-lg-10 main-col site-heading">
 
-                <!-- Karussel -->
+                <!-- CAROUSEL -->
                 <div class="row justify-content-center my-2">
                     <div class="col-12 gallery">
 
@@ -228,12 +245,10 @@
                     </div>
                 </div>
 
-                <!-- Inhalt -->
-                <!-- Überschrift -->
+                <!-- CONTENT -->
                 <h1>
                     Meet App
                 </h1>
-                <!-- Text -->
                 <section class="mb-5">
                     <p>
                         The “Meet App” project aims to create a Serverless Progressive Web Application (PWA) with React
@@ -386,7 +401,7 @@
                     </p>
                 </section>
 
-                <!-- App-Links -->
+                <!-- Stripes - Trenner -->
                 <section>
                     <div class="footer-stripes my-5">
                         <div class="stripe stripe-1"></div>
@@ -404,60 +419,42 @@
                 </section>
             </div>
         </div>
-
-        <!-- Footer -->
-        <!-- <div class="row main-row site-heading-container mb-1 mt-5">
-            <div class="col-11 main-col site-heading">
-                <footer class="footer ">
-                    <div class="footer-stripes">
-                        <div class="stripe stripe-1"></div>
-                        <div class="stripe stripe-2"></div>
-                        <div class="stripe stripe-3"></div>
-                    </div>
-                    <div class="container text-center">
-                        <div class="social-icons">
-                            <a href="https://github.com/TK1893" target="_blank" class="social-icon">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/tobias-kraft-910642116/" target="_blank"
-                                class="social-icon">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </div>
-                        <p>&copy; 2024 Tobias Kraft</p>
-                    </div>
-                </footer>
-            </div>
-        </div> -->
     </div>
-    <div class="footer-stripes mt-5">
-        <div class="container">
-            <div class="stripe stripe-1"></div>
-            <div class="stripe stripe-2"></div>
-            <div class="stripe stripe-3"></div>
-        </div>
-    </div>
-    <footer class="footer ">
 
-        <div class="container text-center">
-            <div class="social-icons">
-                <span>Tobias Kraft</span>
-                <a href="https://github.com/TK1893" target="_blank" class="social-icon">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/tobias-kraft-910642116/" target="_blank" class="social-icon">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
-                    <i class="bi bi-instagram"></i>
-                </a>
+    <!-- FOOTER -->
+    <div class="container footer mt-5 mb-3">
+        <!-- STRIPES -->
+        <div class="row footer-stripes-row">
+            <div class="col footer-stripes-col footer-stripes mx-0">
+                <div class="stripe stripe-1"></div>
+                <div class="stripe stripe-2"></div>
+                <div class="stripe stripe-3"></div>
             </div>
-            <p>&copy; 2024 Tobias Kraft</p>
         </div>
-    </footer>
+
+        <!-- FOOTER CONTENT -->
+        <div class="row footer-content-row align-items-center justify-content-center">
+            <div class="col text-start logo ms-1">
+                <a class="a-logo" href="index.html">Tobias Kraft</a>
+                <!-- <span class="logo">Tobias Kraft</span> -->
+            </div>
+            <div class="col text-end social-icons-container me-1">
+                <div class="social-icons d-inline-flex">
+                    <a href="https://github.com/TK1893" target="_blank" class="social-icon">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tobias-kraft-910642116/" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="text-center">&copy; 2024 Tobias Kraft</p> -->
+    </div>
+
 </body>
 
 </html>

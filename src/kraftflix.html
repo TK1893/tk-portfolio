@@ -12,10 +12,13 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <nav class="navbar fixed-top">
-        <div class="container">
+        <div class="container navigation">
+            <!-- BRAND -->
             <a class="navbar-brand" href="index.html">Tobias Kraft</a>
+
+            <!-- BUTTON TOGGLER -->
             <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <div class="tripple-line-container" id="tripple-line-container">
@@ -25,6 +28,7 @@
                 </div>
             </button>
 
+            <!-- OFF-CANVAS -->
             <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -36,7 +40,7 @@
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <!-- Links normal -->
+                        <!-- MENÜ-LINKS (Hauptmenü-Links) -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -47,50 +51,150 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
 
-                        <!-- Links Dropdown -->
+                        <!-- CODE (Untermenü-Links) -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="code.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Code
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="./meet.html">Meet</a></li>
-                                <li><a class="dropdown-item active" href="./kraftflix.html">KraftFlix</a>
+                                <li><a class="dropdown-item " href="./meet.html">Meet</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">KraftFlix Client</a></li>
-                                <li><a class="dropdown-item" href="#">Poke-App</a></li>
+                                <li><a class="dropdown-item active" href="kraftflix.html">KraftFlix</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="kraftflixclient.html">KraftFlix Client</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="meet.html">Poke-App</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                             </ul>
                         </li>
-
+                        <!-- CLIENTS & REFERENZES (Untermenü-Links) -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./code.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Cinematography
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Clients + <br>References
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/Mercedes-Benz-125-Jahre-Innovation__134667.html">Mercedes
+                                        Benz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/HugoBoss-Interactive-Narrative-Internetspot__139956.html">Hugo
+                                        Boss</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/Toyota-Unglaublich__143447.html">Toyota</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/Credit-Suisse-Mitarbeiter__143837.html">Credit
+                                        Suisse</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/Deutsche-Bahn-Angeber__152838.html">
+                                        Deutsche Bahn
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="#">T-Mobile</a></li>
-                                <li><a class="dropdown-item" href="#">Credit Suisse</a></li>
-                                <li><a class="dropdown-item" href="#">Mercedes Benz</a></li>
-                                <li><a class="dropdown-item" href="#">Hugo Boss</a></li>
-                                <li><a class="dropdown-item" href="#">Toyota</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/E-wie-einfach-Einschlafen__155854.html#!searchterm=e%20wie%20einfach">E
+                                        WIE EINFACH</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/Efferalgan-Le-Bobsleigh__149480.html">
+                                        Efferalgan
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.crew-united.com/de/Tobias-Kraft_143886.html">...
+                                        more</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                             </ul>
                         </li>
                     </ul>
+                    <div class="container footer mt-5 mb-3 mx-0">
+                        <!-- STRIPES -->
+                        <div class="row footer-stripes-row">
+                            <div class="col footer-stripes-col footer-stripes mx-0">
+                                <div class="stripe stripe-1"></div>
+                                <div class="stripe stripe-2"></div>
+                                <div class="stripe stripe-3"></div>
+                            </div>
+                        </div>
+
+                        <!-- OFFCANVAS FOOTER -->
+                        <div class="row footer-content-row align-items-center justify-content-center">
+                            <div class="col text-start logo ms-1">
+                                <a class="a-logo" href="index.html">Tobias Kraft</a>
+                                <!-- <span class="logo">Tobias Kraft</span> -->
+                            </div>
+                            <div class="col text-end social-icons-container me-1">
+                                <div class="social-icons d-inline-flex">
+                                    <a href="https://github.com/TK1893" target="_blank" class="social-icon">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tobias-kraft-910642116/" target="_blank"
+                                        class="social-icon">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/your-profile/" target="_blank"
+                                        class="social-icon">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Haupt-Inhalt + Footer -->
+    <!-- MAIN CONTENT-->
     <div class="container main-container">
 
-        <!-- Lauftext -->
+        <!-- LAUF-TEXT -->
         <div class="row main-row my-5">
             <div class="col-11 main-col align-content-center">
                 <div class="marquee-container">
@@ -99,11 +203,11 @@
             </div>
         </div>
 
-        <!-- Kraftflix -->
+        <!-- KRAFTFLIX -->
         <div class="row main-row site-heading-container">
             <div class="col-11 main-col site-heading">
 
-                <!-- Karussel -->
+                <!-- CAROUSEL -->
                 <div class="row justify-content-center my-2">
                     <div class="col-12 gallery">
 
@@ -144,12 +248,11 @@
                     </div>
                 </div>
 
-                <!-- Inhalt -->
-                <!-- Überschrift -->
+                <!-- CONTENT -->
                 <h1>
                     KraftFlix App
                 </h1>
-                <!-- Synopsis -->
+                <!-- SYNOPSIS -->
                 <section class="mb-0">
                     <p>
                         Kraftflix is a full-stack web application that allows movie enthusiasts to browse a movie
@@ -158,7 +261,7 @@
                         their
                         favorite movies, and manage their personal data.
                         The application is built using the MERN stack (MongoDB, Express, React and Node.js).
-                        The backend provides a REST API & MongoDB database.
+                        The backend provides a REST API and MongoDB database.
                         The frontend offers a responsive, user-friendly interface.
                     </p>
                     <p>
@@ -258,7 +361,7 @@
                     </p>
                     <!-- Tabellen -->
                     <h4>
-                        Views & Features
+                        Views &amp; Features
                     </h4>
                     <ul class="list-group" data-bs-theme="dark">
                         <li class="list-group-item">
@@ -339,7 +442,7 @@
                     </ul>
                 </section>
 
-                <!-- App-Links -->
+                <!-- Stripes - Trenner -->
                 <section>
                     <div class="footer-stripes my-5">
                         <div class="stripe stripe-1"></div>
@@ -347,45 +450,49 @@
                         <div class="stripe stripe-3"></div>
                     </div>
                     <h3>
-                        Please check out the Kraftflix Live App ...
+                        Please check out the Meet Live App ...
                     </h3>
-                    <a href="https://kraftflix.netlify.app/"> KraftFlix Live App</a>
+                    <a href="https://tk1893.github.io/meet/"> Meet Live App</a>
                     <h3>
-                        Please check out the KraftFlix Code on Github ...
+                        Please check out the Meet Code on Github ...
                     </h3>
-                    <a href="https://github.com/TK1893/kraftFlix-client"> KraftFlix Project - Backend</a>
-                    <br>
-                    <a href="https://github.com/TK1893/Kraftflix-React" class="mb-5"> KraftFlix Project - Frontend</a>
+                    <a href="https://github.com/TK1893/meet" class="mb-5"> Meet Project</a>
                 </section>
             </div>
         </div>
-
-        <!-- Footer -->
-        <div class="row main-row site-heading-container mb-1 mt-5">
-            <div class="col-11 main-col site-heading">
-                <footer class="footer ">
-                    <div class="footer-stripes">
-                        <div class="stripe stripe-1"></div>
-                        <div class="stripe stripe-2"></div>
-                        <div class="stripe stripe-3"></div>
-                    </div>
-                    <div class="container text-center">
-                        <div class="social-icons">
-                            <a href="https://github.com/your-profile" target="_blank" class="social-icon">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/your-profile/" target="_blank" class="social-icon">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </div>
-                        <p>&copy; 2024 Mein Portfolio</p>
-                    </div>
-                </footer>
+    </div>
+    <!-- FOOTER -->
+    <div class="container footer mt-5 mb-3">
+        <!-- STRIPES -->
+        <div class="row footer-stripes-row">
+            <div class="col footer-stripes-col footer-stripes mx-0">
+                <div class="stripe stripe-1"></div>
+                <div class="stripe stripe-2"></div>
+                <div class="stripe stripe-3"></div>
             </div>
         </div>
+
+        <!-- FOOTER CONTENT -->
+        <div class="row footer-content-row align-items-center justify-content-center">
+            <div class="col text-start logo ms-1">
+                <a class="a-logo" href="index.html">Tobias Kraft</a>
+                <!-- <span class="logo">Tobias Kraft</span> -->
+            </div>
+            <div class="col text-end social-icons-container me-1">
+                <div class="social-icons d-inline-flex">
+                    <a href="https://github.com/TK1893" target="_blank" class="social-icon">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tobias-kraft-910642116/" target="_blank" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="text-center">&copy; 2024 Tobias Kraft</p> -->
     </div>
 
 </body>

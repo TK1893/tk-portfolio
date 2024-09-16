@@ -23,7 +23,7 @@ npm run deploy
 (4) KOMBIBEFEHL (1) & (2)
 ----------------------------------------------
 git add .
-git commit -m "Update Meet App Ex.4-10"
+git commit -m "Update Portfolio - Stand Jojo Eltern"
 git branch -M main
 git push -u origin main
 
@@ -127,10 +127,10 @@ git add .
 git commit -m "Your commit message"
 git push -u origin NEW_BRANCH_NAME
 ------------------------------------
-git checkout -b tf-01-header
+git checkout -b tkp-02-09-12
 git add .
-git commit -m "Update gitignore"
-git push -u origin tf-01-header
+git commit -m "Update Portfolio"
+git push -u origin tkp-02-09-12
 
 ----------------------------------------------
 (14) Mergen (zusammenführen) eines branches in main branch

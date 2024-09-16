@@ -1,3 +1,6 @@
+***************************************************
+GESAMT-LAYOUT auf Der Website Page MEET.html
+***************************************************
 Das Gesamt-Layout wurde auf der Seite meet.html gestaltet:
 Sprich die richtige Navigation mit den ausgetsalteten links und dem richtigen Abstaänden.
 Auch der Footer wurde dort angefangen.

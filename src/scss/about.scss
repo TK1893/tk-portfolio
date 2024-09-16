@@ -1,6 +1,7 @@
-// src\scss\styles.scss
+// src\scss\about.scss
 @import url('./fonts/satoshi.css');
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import 'bootstrap/scss/bootstrap';
 
 @font-face {
   font-family: 'JapaneseFont';
@@ -20,113 +21,193 @@ $toggler-color-1: #00aba9; // Farbe für den ersten Strich des Toggler-Buttons
 $toggler-color-2: #ff00a2; // Farbe für den zweiten Strich des Toggler-Buttons
 $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
-@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/bootstrap';
 
-// .no-gutters {
-//   margin-right: 0;
-//   margin-left: 0;
-
-//   .row {
-//     margin-right: 0;
-//     margin-left: 0;
-
-//     > .col,
-//     > [class*='col-'] {
-//       padding-right: 0;
-//       padding-left: 0;
-//     }
-//   }
-// }
+// *********************************************************
+// ---- Body ----------------------------------------------
+// *********************************************************
 
 body {
+  padding-top: 6rem;
+  margin: 0;
+  background-color: black;
+  font-family: $ter-font;
+  color: white;
+}
+
+// *********************************************************
+// ---- Grid ----------------------------------------------
+// *********************************************************
+
+.main-container {
+  // margin-top: 6rem;
+  // border: 1px solid red;
+  background-color: black;
+}
+
+.main-row {
+  // border: 1px solid greenyellow;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.main-col {
+  // border: 1px solid orange;
   margin: 0;
   padding: 0;
-  background-color: black;
+}
+// *********************************************************
+// ---- Text & Elements ------------------------------------
+// *********************************************************
+h1 {
+  font-family: $sec-font;
+  font-size: 4.5rem;
+  color: $primary-color;
+}
+h2 {
+  margin-top: 2rem;
+  font-family: $sec-font;
+  font-size: 2rem;
+}
+h3 {
+  margin-top: 2rem;
+  font-family: $sec-font;
+  font-size: 2rem;
+  // color: $toggler-color-1;
+}
+h4 {
+  margin-top: 2rem;
+  font-family: $sec-font;
+  font-size: 1.7rem;
+  // color: $toggler-color-3;
+}
+h5 {
   font-family: $sec-font;
   color: white;
-  // border: 1px solid red;
 }
-
-.body-cont {
-  // border: 1px solid red;
-  height: 100vh;
+p {
+  font-family: $ter-font;
+  line-height: 125%;
 }
-
-// *********************************************************
-// -- MAIN -------------
-// *********************************************************
-.b-main {
-  margin-top: 50px;
-  height: 100%;
-}
-
-// *********************************************************
-// ---- ABOUT ----------------------------------------------
-// *********************************************************
-
-.about-container {
-  p {
-    font-family: $ter-font;
-    font-weight: 500;
-  }
-  h1 {
-    font-family: $sec-font;
-  }
-}
-// .spacer {
-//   height: 15vh;
-// }
-// **** Laufschrift ****
-.marquee-container {
-  margin-top: 2rem;
+ul {
   margin-bottom: 2rem;
-  // padding: 0;
-  position: relative;
-  overflow: hidden;
-  height: 160px;
-  width: 100%; // Breite auf Container anpassen
-  // height: 200px; // Höhe einstellen, um den Text sichtbar zu machen
-  border: 1px solid #ccc;
-  border: none;
 }
-
-.marquee-text {
-  padding: 0;
+a {
   font-family: $sec-font;
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-  animation: marquee 10s linear infinite;
-  font-size: 7rem; // Textgröße anpassen
-  color: white; // Farbe für besseren Kontrast (optional)
+  font-size: 1.5rem;
+  color: $primary-color;
 }
 
-// Animation Definition
+.list-group {
+  border-color: pink;
+}
+.list-group-item {
+  background-color: black;
+  border-color: white;
+}
+
+// *********************************************************
+// ---- Laufschrift ---------------------------------------
+// *********************************************************
+
+/* Container für den Lauftext */
+.marquee-container {
+  width: 100%; /* Breite des Containers */
+  height: auto;
+  overflow: hidden; /* Verhindert das Überlaufen des Textes */
+  white-space: nowrap; /* Text in einer Zeile halten */
+  box-sizing: border-box;
+}
+
+/* Lauftext selbst */
+.marquee-text {
+  font-family: $sec-font;
+  font-size: 8rem;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-left: 100%; /* Start außerhalb des Containers */
+  animation: marquee 10s linear infinite; /* Animation */
+}
+
+/* Keyframes für die Lauftext-Animation */
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
-  }
+    transform: translateX(0);
+  } /* Start von rechts */
   100% {
     transform: translateX(-100%);
-  }
+  } /* Ende links außen */
 }
 
 // *********************************************************
-// -- HEADER -------------
+// -- Tables --
 // *********************************************************
+
+// body
+//   > div
+//   > div:nth-child(2)
+//   > div
+//   > main
+//   > div
+//   > div:nth-child(4)
+//   > div
+//   > table
+//   > thead
+//   > tr
+//   > th:nth-child(1),
+// th:nth-child(2),
+// th:nth-child(3) {
+//   color: red;
+// }
+
+thead .h-table {
+  color: white;
+  border: 1px solid white;
+  font-family: $ter-font;
+  background-color: black;
+}
+
+#skill-table {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#skill-table > tbody > tr > th {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-family: $ter-font;
+}
+#skill-table > tbody > tr > td {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#skill-table > tbody > tr:nth-child(5) > th {
+  border-top: none;
+}
+
+// *********************************************************
+// -- NAVIGATION -------------
+// *********************************************************
+
+.navigation-col {
+  padding: 0;
+  width: 100%;
+}
+
+// ---- NAVBAR ----
 .navbar {
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: rgba(0, 0, 0, 0.85);
   // backdrop-filter: blur(10px); /* Unschärfe-Effekt für den Hintergrund */
+  // border: 1px solid #f09609;
 }
-// ************************
-// -- NAVBAR -------------
-// ************************
 
-// **** Brand ****
+// ----  Brand ----
 .navbar-brand {
   color: $primary-color;
   font-family: $pri-font;
-  font-size: 2.4rem;
+  font-size: 4rem;
   &:hover {
     color: white;
   }
@@ -136,11 +217,14 @@ body {
   &.show {
     color: $primary-color !important;
   }
+  @media screen and (max-width: 575px) {
+    font-size: 2.4rem;
+  }
 }
 
-// ***********************************
-// -- CUSTOM TOGGLER --
-// ***********************************
+// ************************
+// ---- CUSTOM TOGGLER ----
+// ************************
 
 // **** BUTTON ****
 .navbar-toggler {
@@ -150,8 +234,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2rem; /* Kann angepasst werden */
-  height: 2rem; /* Kann angepasst werden */
+  width: 4rem;
+  height: 3rem;
+  @media screen and (max-width: 575px) {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 // **** STRICH-CONTAINER (div) ****
@@ -160,17 +248,26 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 2rem; /* Größe des Toggler-Icons */
-  height: 1.8rem; /* Höhe des Toggler-Icons */
+  width: 3rem;
+  height: 2.7rem;
+  // @media screen and (max-width: 767px) {
+  @media screen and (max-width: 575px) {
+    width: 2rem;
+    height: 1.8rem;
+  }
 }
 // **** Striche (alle) ****
 .custom-hr {
+  opacity: 1;
+  margin: 0;
   padding: 0 0.2rem;
   border: none;
   width: 100%;
-  height: 4px; /* Dicke der Striche */
-  margin: 0;
-  opacity: 1;
+  height: 6px; /* Dicke der Striche */
+  @media screen and (max-width: 575px) {
+    // @media screen and (max-width: 767px) {
+    height: 4px; /* Dicke der Striche */
+  }
 }
 
 // **** Striche (einzeln) ****
@@ -187,6 +284,25 @@ body {
 // *********************************************************
 // -- OFFCANVAS --
 // *********************************************************
+
+.offcanvas {
+  font-family: $sec-font;
+  background-color: black;
+  padding: 1% 10%;
+  @media screen and (max-width: 575px) {
+    padding: 0;
+  }
+  .footer {
+    padding: 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    .logo {
+      padding-left: 8px;
+    }
+  }
+}
+
 .offcanvas-body {
   background-color: black;
 }
@@ -226,7 +342,7 @@ body {
 
 .nav-link {
   color: white;
-  font-family: $ter-font;
+  // font-family: $ter-font;
   text-transform: uppercase;
   font-size: 3rem;
   &:hover {
@@ -235,15 +351,22 @@ body {
   &.active {
     color: $primary-color !important;
   }
+  @media screen and (max-width: 565px) {
+    font-size: 3rem;
+  }
 }
+// Dropdown Menü-Oberpunkt
 .dropdown-toggle {
   color: white;
 
   &.show {
     color: $primary-color !important;
   }
+  @media screen and (max-width: 565px) {
+    font-size: 3rem;
+  }
 }
-
+// Dropdown Menü-Container
 .dropdown-menu.show {
   background-color: transparent;
   border-color: $primary-color;
@@ -261,6 +384,7 @@ body {
   }
   &.active {
     color: $primary-color !important;
+    background-color: black;
   }
 }
 .dropdown-divider,
@@ -268,92 +392,49 @@ body {
   background-color: $primary-color;
 }
 
-.nav {
-  background-color: black;
-  div {
-    background-color: black;
+// *********************************************************
+// -- Stripes als Trenner --
+// *********************************************************
+// -- Stripes --
+.footer-stripes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem; // Abstand zwischen den Streifen und dem Footer-Inhalt
+
+  .stripe {
+    width: 100%;
+    height: 3px; // Dicke der Streifen
+    margin-bottom: 6px; // Abstand zwischen den Streifen
+  }
+
+  .stripe-1 {
+    background-color: $toggler-color-1;
+  }
+
+  .stripe-2 {
+    background-color: $toggler-color-2;
+  }
+
+  .stripe-3 {
+    background-color: $toggler-color-3;
+    margin-bottom: 0; // Kein Abstand nach dem letzten Streifen
   }
 }
 
 // *********************************************************
-// -- FOOTER --
+// -- Footer --
 // *********************************************************
-// .footer {
-//   background-color: black;
-//   color: $primary-color;
-//   padding: 1rem 0;
-//   position: fixed; /* Ändert die Position von sticky auf fixed */
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 1000; /* Stellt sicher, dass der Footer über anderem Inhalt liegt */
-
-//   .footer-stripes {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin-bottom: 1rem; // Abstand zwischen den Streifen und dem Footer-Inhalt
-
-//     .stripe {
-//       width: 100%;
-//       height: 3px; // Dicke der Streifen
-//       margin-bottom: 6px; // Abstand zwischen den Streifen
-//     }
-
-//     .stripe-1 {
-//       background-color: $toggler-color-1;
-//     }
-
-//     .stripe-2 {
-//       background-color: $toggler-color-2;
-//     }
-
-//     .stripe-3 {
-//       background-color: $toggler-color-3;
-//       margin-bottom: 0; // Kein Abstand nach dem letzten Streifen
-//     }
-//   }
-
-//   .container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//   }
-
-//   .social-icons {
-//     margin-bottom: 0.5rem;
-
-//     .social-icon {
-//       color: $primary-color;
-//       font-size: 1.2rem;
-//       margin: 0 1rem;
-//       transition: color 0.3s;
-//       text-decoration: none; /* Entfernt Unterstreichung */
-
-//       &:hover {
-//         color: white;
-//       }
-//     }
-//   }
-// }
 
 .footer {
-  background-color: black;
-  color: $primary-color;
-  padding: 1rem 0;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Stellt sicher, dass der Footer über anderem Inhalt liegt */
-  // margin-top: 1rem;
-  // Fügt zusätzlichen Abstand hinzu, falls erforderlich
+  // padding: 0;
+  // -- Stripes --
   .footer-stripes {
+    // padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem; // Abstand zwischen den Streifen und dem Footer-Inhalt
-
     .stripe {
       width: 100%;
       height: 3px; // Dicke der Streifen
@@ -373,128 +454,48 @@ body {
       margin-bottom: 0; // Kein Abstand nach dem letzten Streifen
     }
   }
+  // LOGO
+  .logo {
+    padding-right: 0;
+    // padding-left: 1rem;
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1140px; // Breite der Bootstrap-Container-Klasse
-    margin: 0 auto; // Zentriert den Container
-  }
-
-  .social-icons {
-    margin-bottom: 0.5rem;
-
-    .social-icon {
+    .a-logo {
+      padding: 0;
+      font-family: $pri-font;
       color: $primary-color;
-      font-size: 1.2rem;
-      margin: 0 1rem;
+      font-size: 2.5rem;
+      text-decoration: none;
       transition: color 0.3s;
-      text-decoration: none; /* Entfernt Unterstreichung */
 
       &:hover {
         color: white;
       }
+
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  // -- SOCIAL ICONS --
+  .social-icons-container {
+    padding-left: 0;
+    .social-icons {
+      .social-icon {
+        color: $primary-color;
+        font-size: 1.8rem;
+        margin-left: 3.5rem;
+        transition: color 0.3s;
+        text-decoration: none; /* Entfernt Unterstreichung */
+
+        &:hover {
+          color: white;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+          margin-left: 1.5rem;
+        }
+      }
     }
   }
 }
-
-// *********************************************************
-// -- Tables --
-// *********************************************************
-
-body
-  > div
-  > div:nth-child(2)
-  > div
-  > main
-  > div
-  > div:nth-child(4)
-  > div
-  > table
-  > thead
-  > tr
-  > th:nth-child(1),
-th:nth-child(2),
-th:nth-child(3) {
-  color: white;
-}
-
-body
-  > div
-  > div:nth-child(2)
-  > div
-  > main
-  > div
-  > div:nth-child(4)
-  > div
-  > table
-  > thead
-  > tr
-  > th {
-  background-color: black;
-  border-color: white;
-}
-
-body
-  > div
-  > div:nth-child(2)
-  > div
-  > main
-  > div
-  > div:nth-child(4)
-  > div
-  > table
-  > tbody
-  > tr
-  > th {
-  background-color: black;
-}
-
-tr {
-  background-color: black;
-}
-body
-  > div
-  > div:nth-child(2)
-  > div
-  > main
-  > div
-  > div:nth-child(4)
-  > div
-  > table {
-  background-color: black;
-  font-family: $ter-font;
-  border-color: white;
-  border-radius: 5px 5px 5px 5px;
-}
-
-body
-  > div
-  > div:nth-child(2)
-  > div
-  > main
-  > div
-  > div:nth-child(4)
-  > div
-  > table
-  > tbody
-  > tr
-  > td {
-  background-color: black;
-}
-
-// body
-//   > div
-//   > div:nth-child(2)
-//   > div
-//   > main
-//   > div
-//   > div:nth-child(4)
-//   > div
-//   > table
-//   > tbody
-//   > tr:nth-child(4)
-//   > th {
-
-// }

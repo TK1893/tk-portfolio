@@ -8,13 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <script type="module" src="js/index.js"></script>
-
+    <script type="module" src="js/about.js"></script>
 </head>
 
 <body>
@@ -48,7 +42,7 @@
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <!-- MENÜ-LINKS (Hauptmenü-Links) -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="about.html">About Me</a>
@@ -59,7 +53,7 @@
 
                         <!-- CODE (Untermenü-Links) -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Code
                             </a>
@@ -67,7 +61,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item " href="./meet.html">Meet</a></li>
+                                <li><a class="dropdown-item active" href="./meet.html">Meet</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -197,38 +191,133 @@
         </div>
     </nav>
 
-    <!-- MAIN CONTENT-->
-    <div class="container main-cont d-flex align-items-center">
-        <div class="row w-100">
-            <div class="col">
-                <div class="animated-text animated-text-1" style="--index: 1;">
-                    Hello
-                </div>
+    <!-- Haupt-Inhalt -->
+    <div class="container body-cont">
+        <div class="row">
+            <div class="col ">
+                <main>
+                    <!-- **** MAIN ******* -->
+                    <div class="container-fluid b-main">
+                        <!-- Bootstrap Grid -->
+                        <div class="row">
+                            <!-- Erste Spalte mit dem Marquee-Text -->
+                            <div class="col-12">
+                                <div class="marquee-container">
+                                    <div class="marquee-text">
+                                        Who? How? What?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="animated-text animated-text-2" style="--index: 2;">
-                    World . . .
-                </div>
+                        <div class="row">
+                            <!-- Zweite Spalte mit restlichem Inhalt -->
+                            <div class="col-12 about-container">
+                                <h1>About me</h1>
+                                <p>Tobias Kraft is a Berlin-based Graduate Engineer of Audiovisual Media and Web
+                                    Developer. After studying Audiovisual Media (Media Technology) at the
+                                    Hochschule der
+                                    Medien in Stuttgart, he worked for over 15 years as an engineer and
+                                    high-speed
+                                    camera operator for international film and commercial productions.
+                                    Driven by his love of technical innovation and the ideal of a networked
+                                    world, he
+                                    decided to broaden his professional horizons. After additional academic
+                                    studies, he
+                                    has worked as a Full Stack Web Developer since 2024.
+                                </p>
+                                <div class="footer-stripes">
+                                    <div class="stripe stripe-1"></div>
+                                    <div class="stripe stripe-2"></div>
+                                    <div class="stripe stripe-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
 
-                <div class="animated-text animated-text-3" style="--index: 3;">
-                    Please
-                </div>
+                            <!-- Zweite Spalte mit restlichem Inhalt -->
+                            <div class="col-12 about-container mt-3">
+                                <h1>Clients</h1>
+                                <p>Hugo Boss • Mercedes Benz • Toyota • Credit Suisse • Deutsche Bahn • T-Mobile •
+                                    Migros • Netflix •
+                                    Scrabble • Arla • Efferalgan • Telekom • 1&1 Internet • E wie einfach • Media Markt
+                                    • Big Fish •
+                                    Tony
+                                    Petersen Film • Blink • Soup Film • Radical media • Nasty Little Girl • Stink Films
+                                    • Jo!Schmid •
+                                    Ambulance Film • Bubbles Film • Markenfilm
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="animated-text animated-text-4" style="--index: 4;">
-                    Check Out
-                </div>
+                        <div class="row">
 
-                <div class="animated-text animated-text-5 wobble-text" style="--index: 5;">
-                    <a href="meet.html">
-                        MY Code !!
+                            <div class="col-12 about-container mt-3">
+                                <h1>Skills</h1>
 
-                    </a>
-                </div>
+                                <table class="table table-bordered table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th class="h-table" scope="col">Skill fields</th>
+                                            <th class="h-table" scope="col">Years of Experience</th>
+                                            <th class="h-table" scope="col">Level of Expertise</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Cinematography</th>
+                                            <td>20</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Photography</th>
+                                            <td>26</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Audio Visual Media</th>
+                                            <td>20</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="3"></th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="3">Web Development</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">HTML</th>
+                                            <td>10</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CSS</th>
+                                            <td>10</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">JS</th>
+                                            <td>2</td>
+                                            <td>Advanced Beginner</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">React</th>
+                                            <td>1</td>
+                                            <td>Advanced Beginner</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
             </div>
         </div>
-    </div>
 
+    </div>
     <!-- FOOTER -->
-    <div class="container footer mt-3 mb-3">
+    <div class="container footer mt-5 mb-3">
         <!-- STRIPES -->
         <div class="row footer-stripes-row">
             <div class="col footer-stripes-col footer-stripes mx-0">

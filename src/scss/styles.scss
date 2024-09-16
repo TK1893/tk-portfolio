@@ -58,42 +58,42 @@ body {
 // ---- INDEX ----------------------------------------------
 // *********************************************************
 // ** Version 1 ***********************
-// .animated-text {
-//   position: relative;
-//   font-size: 5rem; // Textgröße
-//   font-weight: bold;
-//   color: white;
-//   white-space: nowrap;
-//   overflow: hidden; // Verhindert, dass Text außerhalb des Containers sichtbar wird
-//   opacity: 0; // Startet unsichtbar
-//   transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
-//   animation: slideIn 3s ease-in-out forwards;
-//   animation-delay: calc(var(--index) * 0.5s); // Verzögert jede Zeile leicht
-// }
+.animated-text {
+  position: relative;
+  font-size: 5rem; // Textgröße
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden; // Verhindert, dass Text außerhalb des Containers sichtbar wird
+  opacity: 0; // Startet unsichtbar
+  transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
+  animation: slideIn 3s ease-in-out forwards;
+  animation-delay: calc(var(--index) * 0.5s); // Verzögert jede Zeile leicht
+}
 
-// // Animation für das Wabbern und Stoppen
-// @keyframes slideIn {
-//   0% {
-//     transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
-//     opacity: 0; // Zu Beginn unsichtbar
-//   }
-//   10% {
-//     opacity: 1; // Text wird sichtbar, während er ins Bild fährt
-//   }
-//   70% {
-//     transform: translateX(0); // Stößt an den linken Rand
-//   }
-//   80% {
-//     transform: translateX(-10px); // Leichtes Wabbern nach links
-//   }
-//   90% {
-//     transform: translateX(5px); // Zurück nach rechts
-//   }
-//   100% {
-//     transform: translateX(0); // Am linken Rand stehenbleiben
-//     opacity: 1; // Am Ende sichtbar bleiben
-//   }
-// }
+// Animation für das Wabbern und Stoppen
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
+    opacity: 0; // Zu Beginn unsichtbar
+  }
+  10% {
+    opacity: 1; // Text wird sichtbar, während er ins Bild fährt
+  }
+  70% {
+    transform: translateX(0); // Stößt an den linken Rand
+  }
+  80% {
+    transform: translateX(-10px); // Leichtes Wabbern nach links
+  }
+  90% {
+    transform: translateX(5px); // Zurück nach rechts
+  }
+  100% {
+    transform: translateX(0); // Am linken Rand stehenbleiben
+    opacity: 1; // Am Ende sichtbar bleiben
+  }
+}
 
 // ** Version 2 ***********************
 
@@ -292,8 +292,8 @@ body {
 }
 
 // *********************************************************
-// -- OFFCANVAS --
-// *********************************************************
+//   -- OFFCANVAS --
+//   *********************************************************
 .offcanvas-body {
   background-color: black;
 }
@@ -383,15 +383,15 @@ body {
 }
 
 // *********************************************************
-// -- FOOTER --
-// *********************************************************
-// footer {
-//   background-color: $primary-color;
-//   p {
-//     padding: 0;
-//     margin: 0;
-//   }
-// }
+//   -- FOOTER --
+//   *********************************************************
+footer {
+  background-color: $primary-color;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .footer {
   background-color: black;
