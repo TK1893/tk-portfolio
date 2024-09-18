@@ -95,7 +95,26 @@ a {
   font-family: $sec-font;
   font-size: 1.5rem;
   color: $primary-color;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: white;
+  }
 }
+// body
+//   > div.container.main-container
+//   > div.row.main-row.site-heading-container
+//   > div
+//   > section:nth-child(4)
+//   > a:nth-child(3) {
+//   font-family: $sec-font;
+//   font-size: 1.5rem;
+//   color: $primary-color;
+//   transition: all 0.3s ease-in;
+//   :hover {
+//     transform: scale(1.5);
+//     color: white;
+//   }
+// }
 
 .list-group {
   border-color: pink;

@@ -22,71 +22,69 @@ $toggler-color-2: #ff00a2; // Farbe für den zweiten Strich des Toggler-Buttons
 $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
 // @import 'bootstrap/scss/bootstrap';
+// *********************************************************
+// ---- MAIN ----------------------------------------------
+// *********************************************************
+.email-section,
+.phone-section,
+.sm-section,
+.contact-section {
+  h2 {
+    margin-top: 0;
+  }
+  margin-bottom: 2.5rem;
+  a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+
+    span {
+      font-style: normal;
+    }
+  }
+  a:hover {
+    color: $white;
+    // transform: scale(1.5);
+  }
+}
 
 // *********************************************************
 // ---- Body ----------------------------------------------
 // *********************************************************
 
-// body {
-//   padding-top: 6rem;
-//   margin: 0;
-//   background-color: black;
-//   font-family: $ter-font;
-//   color: white;
-// }
-
 body {
+  display: flex;
+  flex-direction: column; // Flexbox für vertikale Ausrichtung
+  min-height: 100vh; // Mindesthöhe auf 100% der Ansichtshöhe setzen
+  margin: 0;
   padding-top: 6rem;
-  @media screen and (max-width: 575) {
-    padding-top: 5rem;
-  }
-  // margin: 0;
-  // background-color: black;
-  // font-family: $ter-font;
-  // color: white;
-}
-
-html,
-body {
   background-color: black;
   font-family: $ter-font;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  // margin-bottom: 1rem;
-}
-
-// Main Content-Container
-.main-cont {
-  flex: 1; // Nimmt den verfügbaren Platz zwischen Navigation und Footer ein
-  display: flex;
-  justify-content: center; // Horizontales Zentrieren
-  align-items: center; // Vertikales Zentrieren
-  // text-align: center; // Text-Inhalte zentriert
-  background-color: black;
+  color: white;
 }
 
 // *********************************************************
 // ---- Grid ----------------------------------------------
 // *********************************************************
 
-// .main-container {
-//   // margin-top: 6rem;
-//   // border: 1px solid red;
-//   background-color: black;
-// }
+.main-container {
+  // margin-top: 6rem;
+  // border: 1px solid red;
+  background-color: black;
+  flex: 1;
+}
 
-// .main-row {
-//   // border: 1px solid greenyellow;
-//   justify-content: center;
-//   margin-bottom: 1.5rem;
-// }
-// .main-col {
-//   // border: 1px solid orange;
-//   margin: 0;
-//   padding: 0;
-// }
+.main-row {
+  // border: 1px solid greenyellow;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.main-col {
+  // border: 1px solid orange;
+  margin: 0;
+  padding: 0;
+}
 // *********************************************************
 // ---- Text & Elements ------------------------------------
 // *********************************************************
@@ -153,6 +151,7 @@ a {
 /* Lauftext selbst */
 .marquee-text {
   font-family: $sec-font;
+  opacity: 1;
   font-size: 8rem;
   margin: 0;
   padding: 0;
@@ -179,7 +178,8 @@ label {
   width: 100%;
   font-family: $sec-font;
   background-color: black;
-  border: solid black 1px;
+  border: solid hsl(0, 0%, 100%) 1px;
+  // border: solid 1px $primary-color;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
   margin-bottom: 0;
@@ -190,7 +190,9 @@ label {
 #exampleFormControlTextarea1,
 #exampleInputEmail1 {
   font-family: $ter-font;
-  border: solid black 1px;
+  border: solid hsl(0, 0%, 100%) 1px;
+  // border: solid 1px $primary-color;
+
   border-radius: 0 0 5px 5px;
   border-top: none;
   margin: 0;
@@ -213,7 +215,7 @@ label {
   }
 }
 .btn-site {
-  border: solid black 1px;
+  border: solid hsl(0, 0%, 100%) 1px;
   font-family: $sec-font;
   font-size: large;
   color: $white;
