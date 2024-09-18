@@ -584,9 +584,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"3C9CX":[function(require,module,exports) {
-// src\js\contact.js
+// Import aller Bootstrap-JS
 var _bootstrap = require("bootstrap");
-var _contactScss = require("../scss/contact.scss");
+var _contactScss = require("../scss/contact.scss"); // Importiere die seiten-spezifischen Stile für die Startseite
 document.addEventListener("DOMContentLoaded", ()=>{
     const form = document.querySelector("form");
     form.addEventListener("submit", (event)=>{
