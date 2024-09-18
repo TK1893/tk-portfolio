@@ -1,6 +1,6 @@
-// Import aller Bootstrap-JS
+// src\js\contact.js
 import * as bootstrap from 'bootstrap';
-import '../scss/contact.scss'; // Importiere die seiten-spezifischen Stile für die Startseite
+import '../scss/contact.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
