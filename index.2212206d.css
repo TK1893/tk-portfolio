@@ -13283,7 +13283,7 @@ a {
 
 @media screen and (width <= 575px) {
   .animated-text {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
@@ -13293,7 +13293,7 @@ a {
 
 @media screen and (width <= 575px) {
   .animated-text-1, .animated-text-3, .animated-text-5 a {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
@@ -13382,7 +13382,7 @@ a {
 .navbar-brand {
   color: #ff00a2;
   font-family: JapaneseFont, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .navbar-brand:hover {
@@ -13395,7 +13395,7 @@ a {
 
 @media screen and (width <= 575px) {
   .navbar-brand {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -13421,8 +13421,8 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 3rem;
-  height: 2.7rem;
+  width: 2.5rem;
+  height: 2.3rem;
   display: flex;
 }
 
