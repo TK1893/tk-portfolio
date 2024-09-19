@@ -13218,6 +13218,16 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.sm-section {
+  margin-bottom: 1rem;
+}
+
+@media screen and (width <= 575px) {
+  .sm-section {
+    margin-bottom: 0;
+  }
+}
+
 body {
   color: #fff;
   background-color: #000;
@@ -13245,9 +13255,15 @@ body {
 }
 
 h1, .h1 {
-  color: #ff00a2;
+  color: #fff;
   font-family: Bebas Neue, sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+}
+
+@media screen and (width <= 575px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
 }
 
 h2, .h2, h3, .h3 {
@@ -13300,11 +13316,11 @@ a {
 }
 
 .marquee-text {
-  opacity: 1;
+  color: #ff00a2;
   margin: 0;
   padding: 0 0 0 100%;
   font-family: Bebas Neue, sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   animation: 10s linear infinite marquee;
   display: inline-block;
 }
@@ -13386,13 +13402,13 @@ label {
 }
 
 .navbar-brand {
-  color: #ff00a2;
+  color: #fff;
   font-family: JapaneseFont, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .navbar-brand:hover {
-  color: #fff;
+  color: #ff00a2;
 }
 
 .navbar-brand.active, .navbar-brand.show {
@@ -13401,7 +13417,7 @@ label {
 
 @media screen and (width <= 575px) {
   .navbar-brand {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -13427,15 +13443,15 @@ label {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 3rem;
-  height: 2.7rem;
+  width: 2.5rem;
+  height: 2.3rem;
   display: flex;
 }
 
 @media screen and (width <= 575px) {
   .navbar-toggler .tripple-line-container {
-    width: 2rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.3rem;
   }
 }
 
@@ -13450,7 +13466,7 @@ label {
 
 @media screen and (width <= 575px) {
   .custom-hr {
-    height: 4px;
+    height: 3px;
   }
 }
 
@@ -13614,7 +13630,7 @@ label {
 }
 
 .footer-content-row {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -13655,7 +13671,7 @@ label {
   color: #ff00a2;
   padding: 0;
   font-family: JapaneseFont, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: none;
   transition: color .3s;
 }
@@ -13666,7 +13682,7 @@ label {
 
 @media (width <= 767px) {
   .footer .logo .a-logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -13677,7 +13693,7 @@ label {
 .footer .social-icons-container .social-icons .social-icon {
   color: #ff00a2;
   margin-left: 3.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: color .3s;
 }
@@ -13686,10 +13702,10 @@ label {
   color: #fff;
 }
 
-@media (width <= 767px) {
+@media (width <= 575px) {
   .footer .social-icons-container .social-icons .social-icon {
     margin-left: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=contact.7be5b494.css.map */

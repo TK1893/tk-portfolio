@@ -13218,7 +13218,6 @@ body {
 }
 
 h1, .h1 {
-  color: #ff00a2;
   font-family: Bebas Neue, sans-serif;
   font-size: 4.5rem;
 }
@@ -13273,10 +13272,11 @@ a {
 }
 
 .marquee-text {
+  color: #ff00a2;
   margin: 0;
   padding: 0 0 0 100%;
   font-family: Bebas Neue, sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   animation: 10s linear infinite marquee;
   display: inline-block;
 }
@@ -13330,13 +13330,13 @@ thead .h-table {
 }
 
 .navbar-brand {
-  color: #ff00a2;
+  color: #fff;
   font-family: JapaneseFont, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .navbar-brand:hover {
-  color: #fff;
+  color: #ff00a2;
 }
 
 .navbar-brand.active, .navbar-brand.show {
@@ -13345,7 +13345,7 @@ thead .h-table {
 
 @media screen and (width <= 575px) {
   .navbar-brand {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -13371,15 +13371,15 @@ thead .h-table {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 3rem;
-  height: 2.7rem;
+  width: 2.5rem;
+  height: 2.3rem;
   display: flex;
 }
 
 @media screen and (width <= 575px) {
   .navbar-toggler .tripple-line-container {
-    width: 2rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.3rem;
   }
 }
 
@@ -13394,7 +13394,7 @@ thead .h-table {
 
 @media screen and (width <= 575px) {
   .custom-hr {
-    height: 4px;
+    height: 3px;
   }
 }
 
@@ -13557,6 +13557,14 @@ thead .h-table {
   margin-bottom: 0;
 }
 
+.footer-content-row {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  margin-top: auto;
+}
+
 .footer .footer-stripes {
   flex-direction: column;
   align-items: center;
@@ -13591,7 +13599,7 @@ thead .h-table {
   color: #ff00a2;
   padding: 0;
   font-family: JapaneseFont, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: none;
   transition: color .3s;
 }
@@ -13602,7 +13610,7 @@ thead .h-table {
 
 @media (width <= 767px) {
   .footer .logo .a-logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -13613,7 +13621,7 @@ thead .h-table {
 .footer .social-icons-container .social-icons .social-icon {
   color: #ff00a2;
   margin-left: 3.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: color .3s;
 }
@@ -13622,10 +13630,10 @@ thead .h-table {
   color: #fff;
 }
 
-@media (width <= 767px) {
+@media (width <= 575px) {
   .footer .social-icons-container .social-icons .social-icon {
     margin-left: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=about.454bbfc0.css.map */

@@ -13377,13 +13377,13 @@ a {
 }
 
 .navbar-brand {
-  color: #ff00a2;
+  color: #fff;
   font-family: JapaneseFont, sans-serif;
   font-size: 3rem;
 }
 
 .navbar-brand:hover {
-  color: #fff;
+  color: #ff00a2;
 }
 
 .navbar-brand.active, .navbar-brand.show {
@@ -13392,7 +13392,7 @@ a {
 
 @media screen and (width <= 575px) {
   .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -13425,8 +13425,8 @@ a {
 
 @media screen and (width <= 575px) {
   .navbar-toggler .tripple-line-container {
-    width: 2rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.3rem;
   }
 }
 
@@ -13441,7 +13441,7 @@ a {
 
 @media screen and (width <= 575px) {
   .custom-hr {
-    height: 4px;
+    height: 3px;
   }
 }
 
@@ -13605,7 +13605,7 @@ a {
 }
 
 .footer-content-row {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -13646,7 +13646,7 @@ a {
   color: #ff00a2;
   padding: 0;
   font-family: JapaneseFont, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: none;
   transition: color .3s;
 }
@@ -13657,7 +13657,7 @@ a {
 
 @media (width <= 767px) {
   .footer .logo .a-logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -13668,7 +13668,7 @@ a {
 .footer .social-icons-container .social-icons .social-icon {
   color: #ff00a2;
   margin-left: 3.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: color .3s;
 }
@@ -13677,10 +13677,10 @@ a {
   color: #fff;
 }
 
-@media (width <= 767px) {
+@media (width <= 575px) {
   .footer .social-icons-container .social-icons .social-icon {
     margin-left: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=index.2212206d.css.map */
