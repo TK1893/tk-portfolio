@@ -124,17 +124,23 @@ a {
   transform: translateX(100%); // Startet rechts außerhalb des Bildschirms
   animation: slideIn 3s ease-in-out forwards;
   animation-delay: calc(var(--index) * 0.5s); // Verzögert jede Zeile leicht
-  font-size: 6rem;
+  // font-size: 6rem;
+  font-size: 4rem;
+
   @media screen and (max-width: 575px) {
-    font-size: 4rem;
+    // font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 .animated-text-1,
 .animated-text-3,
 .animated-text-5 a {
-  font-size: 9rem;
+  // font-size: 9rem;
+  font-size: 7rem;
+
   @media screen and (max-width: 575px) {
-    font-size: 6rem;
+    // font-size: 6rem;
+    font-size: 4rem;
   }
 }
 // -- FARBEN TEXTZEILEN --
@@ -265,8 +271,8 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 3rem;
-  height: 2.7rem;
+  // width: 3rem;
+  // height: 2.7rem;
   width: 2.5rem;
   height: 2.3rem;
   // @media screen and (max-width: 767px) {
