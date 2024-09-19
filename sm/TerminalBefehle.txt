@@ -126,11 +126,18 @@ git checkout -b NEW_BRANCH_NAME
 git add .
 git commit -m "Your commit message"
 git push -u origin NEW_BRANCH_NAME
+
 ------------------------------------
-git checkout -b tkp-02-09-12
+git checkout -b gh-pages
 git add .
-git commit -m "Update Portfolio"
-git push -u origin tkp-02-09-12
+git commit -m "Creating new branch"
+git push -u origin gh-pages
+-------------------------------------
+
+git checkout -b tkp-05-09-19
+git add .
+git commit -m "Your commit message"
+git push -u origin tkp-05-09-19
 
 ----------------------------------------------
 (14) Mergen (zusammenführen) eines branches in main branch

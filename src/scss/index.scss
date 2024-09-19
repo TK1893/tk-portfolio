@@ -222,7 +222,8 @@ a {
 .navbar-brand {
   color: $primary-color;
   font-family: $pri-font;
-  font-size: 4rem;
+  // font-size: 4rem;
+  font-size: 3rem;
   &:hover {
     color: white;
   }
@@ -233,7 +234,8 @@ a {
     color: $primary-color !important;
   }
   @media screen and (max-width: 575px) {
-    font-size: 2.4rem;
+    // font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -265,6 +267,8 @@ a {
   align-items: center;
   width: 3rem;
   height: 2.7rem;
+  width: 2.5rem;
+  height: 2.3rem;
   // @media screen and (max-width: 767px) {
   @media screen and (max-width: 575px) {
     width: 2rem;
