@@ -13283,7 +13283,7 @@ a {
 
 @media screen and (width <= 575px) {
   .animated-text {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
