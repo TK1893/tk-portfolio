@@ -13196,13 +13196,10 @@ textarea.form-control-lg {
 }
 
 body {
-  padding-top: 6rem;
-}
-
-@media screen and (width <= 575px) {
-  body {
-    padding-top: 5rem;
-  }
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  font-family: Satoshi-Variable;
 }
 
 html, body {
@@ -13288,12 +13285,12 @@ a {
 }
 
 .animated-text-1, .animated-text-3, .animated-text-5 a {
-  font-size: 7rem;
+  font-size: 8rem;
 }
 
 @media screen and (width <= 575px) {
   .animated-text-1, .animated-text-3, .animated-text-5 a {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
