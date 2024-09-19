@@ -61,7 +61,7 @@ body {
 h1 {
   font-family: $sec-font;
   font-size: 4.5rem;
-  color: $primary-color;
+  // color: $primary-color;
 }
 h2 {
   margin-top: 2rem;
@@ -121,7 +121,8 @@ a {
 /* Lauftext selbst */
 .marquee-text {
   font-family: $sec-font;
-  font-size: 8rem;
+  font-size: 7rem;
+  color: $primary-color;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -188,11 +189,12 @@ thead .h-table {
 
 // ----  Brand ----
 .navbar-brand {
-  color: $primary-color;
+  color: white;
   font-family: $pri-font;
-  font-size: 4rem;
+  // font-size: 4rem;
+  font-size: 3rem;
   &:hover {
-    color: white;
+    color: $primary-color;
   }
   &.active {
     color: $primary-color !important;
@@ -201,7 +203,8 @@ thead .h-table {
     color: $primary-color !important;
   }
   @media screen and (max-width: 575px) {
-    font-size: 2.4rem;
+    // font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -231,12 +234,16 @@ thead .h-table {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 3rem;
-  height: 2.7rem;
+  // width: 3rem;
+  // height: 2.7rem;
+  width: 2.5rem;
+  height: 2.3rem;
   // @media screen and (max-width: 767px) {
   @media screen and (max-width: 575px) {
-    width: 2rem;
-    height: 1.8rem;
+    // width: 2rem;
+    // height: 1.8rem;
+    width: 1.5rem;
+    height: 1.3rem;
   }
 }
 // **** Striche (alle) ****
@@ -249,7 +256,8 @@ thead .h-table {
   height: 6px; /* Dicke der Striche */
   @media screen and (max-width: 575px) {
     // @media screen and (max-width: 767px) {
-    height: 4px; /* Dicke der Striche */
+    // height: 4px; /* Dicke der Striche */
+    height: 3px; /* Dicke der Striche */
   }
 }
 
@@ -263,7 +271,6 @@ thead .h-table {
 .hr-3 {
   background-color: #f09609;
 }
-
 // *********************************************************
 // -- OFFCANVAS --
 // *********************************************************
@@ -408,9 +415,13 @@ thead .h-table {
 // *********************************************************
 // -- Footer --
 // *********************************************************
+.footer-content-row {
+  margin-bottom: 2rem;
+}
 
 .footer {
-  // padding: 0;
+  margin-top: auto;
+
   // -- Stripes --
   .footer-stripes {
     // padding: 0;
@@ -446,7 +457,9 @@ thead .h-table {
       padding: 0;
       font-family: $pri-font;
       color: $primary-color;
-      font-size: 2.5rem;
+      // font-size: 2.5rem;
+      font-size: 2rem;
+
       text-decoration: none;
       transition: color 0.3s;
 
@@ -455,7 +468,8 @@ thead .h-table {
       }
 
       @media (max-width: 767px) {
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -465,7 +479,8 @@ thead .h-table {
     .social-icons {
       .social-icon {
         color: $primary-color;
-        font-size: 1.8rem;
+        // font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-left: 3.5rem;
         transition: color 0.3s;
         text-decoration: none; /* Entfernt Unterstreichung */
@@ -474,8 +489,9 @@ thead .h-table {
           color: white;
         }
 
-        @media (max-width: 767px) {
-          font-size: 1.4rem;
+        @media (max-width: 575px) {
+          // font-size: 1.4rem;
+          font-size: 1.1rem;
           margin-left: 1.5rem;
         }
       }

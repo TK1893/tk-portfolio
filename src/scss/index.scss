@@ -226,12 +226,12 @@ a {
 
 // ----  Brand ----
 .navbar-brand {
-  color: $primary-color;
+  color: white;
   font-family: $pri-font;
   // font-size: 4rem;
   font-size: 3rem;
   &:hover {
-    color: white;
+    color: $primary-color;
   }
   &.active {
     color: $primary-color !important;
@@ -241,7 +241,7 @@ a {
   }
   @media screen and (max-width: 575px) {
     // font-size: 2.4rem;
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -277,8 +277,10 @@ a {
   height: 2.3rem;
   // @media screen and (max-width: 767px) {
   @media screen and (max-width: 575px) {
-    width: 2rem;
-    height: 1.8rem;
+    // width: 2rem;
+    // height: 1.8rem;
+    width: 1.5rem;
+    height: 1.3rem;
   }
 }
 // **** Striche (alle) ****
@@ -291,7 +293,8 @@ a {
   height: 6px; /* Dicke der Striche */
   @media screen and (max-width: 575px) {
     // @media screen and (max-width: 767px) {
-    height: 4px; /* Dicke der Striche */
+    // height: 4px; /* Dicke der Striche */
+    height: 3px; /* Dicke der Striche */
   }
 }
 
@@ -451,7 +454,7 @@ a {
 // -- Footer --
 // *********************************************************
 .footer-content-row {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -492,7 +495,9 @@ a {
       padding: 0;
       font-family: $pri-font;
       color: $primary-color;
-      font-size: 2.5rem;
+      // font-size: 2.5rem;
+      font-size: 2rem;
+
       text-decoration: none;
       transition: color 0.3s;
 
@@ -501,7 +506,8 @@ a {
       }
 
       @media (max-width: 767px) {
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -511,7 +517,8 @@ a {
     .social-icons {
       .social-icon {
         color: $primary-color;
-        font-size: 1.8rem;
+        // font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-left: 3.5rem;
         transition: color 0.3s;
         text-decoration: none; /* Entfernt Unterstreichung */
@@ -520,8 +527,9 @@ a {
           color: white;
         }
 
-        @media (max-width: 767px) {
-          font-size: 1.4rem;
+        @media (max-width: 575px) {
+          // font-size: 1.4rem;
+          font-size: 1.1rem;
           margin-left: 1.5rem;
         }
       }
