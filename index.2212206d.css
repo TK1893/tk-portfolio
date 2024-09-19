@@ -13392,7 +13392,7 @@ a {
 
 @media screen and (width <= 575px) {
   .navbar-brand {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
