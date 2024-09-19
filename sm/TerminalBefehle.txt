@@ -23,7 +23,7 @@ npm run deploy
 (4) KOMBIBEFEHL (1) & (2)
 ----------------------------------------------
 git add .
-git commit -m "Update Portfolio - Stand Jojo Eltern"
+git commit -m "Update Portfolio #01 24-09-19"
 git branch -M main
 git push -u origin main
 
@@ -34,6 +34,7 @@ git add .
 git commit -m "Update"
 git branch -M main
 git push -u origin main
+npm run build
 npm run deploy
 
 
