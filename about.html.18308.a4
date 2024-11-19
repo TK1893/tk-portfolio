@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tobias Kraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.9fd9ad8a.css"><script src="/index.75a63213.js"></script><link rel="stylesheet" href="/about.454bbfc0.css"><script src="/about.90c04c5e.js" defer=""></script>
+</head>
+
+<body>
+    <div class="container body-cont">
+        <div class="row">
+            <div class="col ">
+                <!-- **** HEADER **** -->
+                <header>
+                    <nav class="navbar fixed-top">
+                        <div class="container ">
+                            <a class="navbar-brand " href="/index.html">Tobias Kraft</a>
+                            <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <div class="tripple-line-container" id="tripple-line-container">
+                                    <hr class="custom-hr hr-1">
+                                    <hr class="custom-hr hr-2">
+                                    <hr class="custom-hr hr-3">
+                                </div>
+                            </button>
+                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class=" offcanvas-header ">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tobias Kraft</h5>
+                                    <button type="button" class="btn-close px-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <hr class="divider">
+
+                                </div>
+
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="/about.html">About
+                                                Me</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/contact.html">Contact</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="/code.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Code
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Meet</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">KraftFlix</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">KraftFlix Client</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Poke-App</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Cinematography
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">T-Mobile</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Credit Suisse</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Mercedes Benz</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Hugo Boss</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Toyota</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Scrabble</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Chio</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Migros</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Franziskaner</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">1&1</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Arla Buko</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Saturn</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">E wie Einfach</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Deutsche Bahn</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Efferalgan</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Möbel Höffner</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Check 24</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Deutsche Post</a>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col ">
+                <!-- **** MAIN ******* -->
+                <main>
+                    <div class="container-fluid b-main">
+                        <!-- Bootstrap Grid -->
+                        <div class="row">
+                            <!-- Erste Spalte mit dem Marquee-Text -->
+                            <div class="col-12">
+                                <div class="marquee-container">
+                                    <div class="marquee-text">
+                                        Who? How? What?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- Zweite Spalte mit restlichem Inhalt -->
+                            <div class="col-12 about-container">
+                                <h1>About me</h1>
+                                <p>Tobias Kraft is a Berlin-based Graduate Engineer of Audiovisual Media and Web
+                                    Developer. After studying Audiovisual Media (Media Technology) at the
+                                    Hochschule der
+                                    Medien in Stuttgart, he worked for over 15 years as an engineer and
+                                    high-speed
+                                    camera operator for international film and commercial productions.
+                                    Driven by his love of technical innovation and the ideal of a networked
+                                    world, he
+                                    decided to broaden his professional horizons. After additional academic
+                                    studies, he
+                                    has worked as a Full Stack Web Developer since 2024.
+                                </p>
+                                <div class="footer-stripes">
+                                    <div class="stripe stripe-1"></div>
+                                    <div class="stripe stripe-2"></div>
+                                    <div class="stripe stripe-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <!-- Zweite Spalte mit restlichem Inhalt -->
+                            <div class="col-12 about-container mt-3">
+                                <h1>Clients</h1>
+                                <p>Hugo Boss • Mercedes Benz • Toyota • Credit Suisse • Deutsche Bahn • T-Mobile •
+                                    Migros • Netflix •
+                                    Scrabble • Arla • Efferalgan • Telekom • 1&1 Internet • E wie einfach • Media Markt
+                                    • Big Fish •
+                                    Tony
+                                    Petersen Film • Blink • Soup Film • Radical media • Nasty Little Girl • Stink Films
+                                    • Jo!Schmid •
+                                    Ambulance Film • Bubbles Film • Markenfilm
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12 about-container mt-3">
+                                <h1>Skills</h1>
+
+                                <table class="table table-bordered table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th class="h-table" scope="col">Skill fields</th>
+                                            <th class="h-table" scope="col">Years of Experience</th>
+                                            <th class="h-table" scope="col">Level of Expertise</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Cinematography</th>
+                                            <td>20</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Photography</th>
+                                            <td>26</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Audio Visual Media</th>
+                                            <td>20</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="3"></th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="3">Web Development</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">HTML</th>
+                                            <td>10</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CSS</th>
+                                            <td>10</td>
+                                            <td>Expert</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">JS</th>
+                                            <td>2</td>
+                                            <td>Advanced Beginner</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">React</th>
+                                            <td>1</td>
+                                            <td>Advanced Beginner</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div class="row footer-row">
+            <div class="col ">
+                <footer class="footer">
+                    <div class="footer-stripes">
+                        <div class="stripe stripe-1"></div>
+                        <div class="stripe stripe-2"></div>
+                        <div class="stripe stripe-3"></div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="social-icons">
+                            <a href="https://github.com/your-profile" target="_blank" class="social-icon">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/your-profile/" target="_blank" class="social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/your-profile/" target="_blank" class="social-icon">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <p>&copy; 2024 Mein Portfolio</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
