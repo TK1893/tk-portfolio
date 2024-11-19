@@ -164,7 +164,7 @@ a {
 // -- Bilder-Galerie -------------
 // *********************************************************
 .carousel-item img {
-  height: 30vh; /* 60% der Viewport-Höhe */
+  height: 40vh; /* 60% der Viewport-Höhe */
   width: 50%;
   object-fit: contain;
 }
@@ -178,6 +178,57 @@ a {
   justify-items: center;
   // border: 1px solid white;
   margin-bottom: 2rem;
+}
+
+// .carousel-control-prev-icon {
+//   background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff00a2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+//   background-size: 100%; /* Größe des Icons */
+//   background-repeat: no-repeat;
+// }
+
+// .carousel-control-next-icon {
+//   background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff00a2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+//   background-size: 100%; /* Größe des Icons */
+//   background-repeat: no-repeat;
+// }
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff00a2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  background-size: 100%; /* Die Größe des Icons anpassen */
+  background-repeat: no-repeat;
+  width: 3rem; /* Breite des Pfeils (anpassen, falls nötig) */
+  height: 3rem; /* Höhe des Pfeils */
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff00a2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+  background-size: 100%; /* Die Größe des Icons anpassen */
+  background-repeat: no-repeat;
+  width: 3rem; /* Breite des Pfeils */
+  height: 3rem; /* Höhe des Pfeils */
+}
+
+/* Stile für nicht aktive Indikatoren */
+.carousel-indicators li {
+  background-color: #ff00a2 !important; /* Farbe für inaktive Balken */
+  // width: 12px !important; /* Breite für inaktive Balken */
+  // height: 12px !important; /* Höhe für inaktive Balken */
+  width: 1rem !important; /* Breite für inaktive Balken */
+  height: 1rem !important; /* Höhe für inaktive Balken */
+  // height: 6px !important; /* Höhe für inaktive Balken */
+  border-radius: 50% !important; /* Runde Form */
+  margin: 0 0.5rem !important; /* Abstand zwischen den Indikatoren */
+  opacity: 0.5 !important; /* Halbtransparent */
+}
+
+/* Stile für den aktiven Indikator */
+.carousel-indicators .active {
+  background-color: #ff00a2 !important; /* Farbe für den aktiven Balken */
+  // width: 16px !important; /* Größerer aktiver Balken */
+  // height: 16px !important;
+  width: 1.1rem !important; /* Größerer aktiver Balken */
+  height: 1.1rem !important;
+  opacity: 0.9 !important; /* Voll sichtbar */
 }
 
 // *********************************************************
