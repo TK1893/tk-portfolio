@@ -13240,6 +13240,12 @@ h5, .h5 {
   font-family: Bebas Neue, sans-serif;
 }
 
+h6, .h6 {
+  color: #fff;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 1.5rem;
+}
+
 p {
   font-family: Satoshi-Variable;
   line-height: 125%;
@@ -13302,12 +13308,48 @@ a:hover {
 .carousel-item img {
   object-fit: contain;
   width: 50%;
-  height: 30vh;
+  height: 40vh;
+}
+
+.carousel-item {
+  margin-bottom: 4rem;
 }
 
 .gallery {
   justify-items: center;
   margin-bottom: 2rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"%23ff00a2\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z\"/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"%23ff00a2\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z\"/></svg>");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.carousel-indicators li {
+  opacity: .5 !important;
+  background-color: #ff00a2 !important;
+  border-radius: 50% !important;
+  width: .8rem !important;
+  height: .8rem !important;
+  margin: 0 .5rem !important;
+}
+
+.carousel-indicators .active {
+  opacity: .9 !important;
+  background-color: #ff00a2 !important;
+  width: 1rem !important;
+  height: 1rem !important;
 }
 
 .navigation-col {
