@@ -13218,6 +13218,10 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.email-section .x-logo:hover, .phone-section .x-logo:hover, .sm-section .x-logo:hover, .contact-section .x-logo:hover {
+  fill: #f09609;
+}
+
 .sm-section {
   margin-bottom: 1rem;
 }

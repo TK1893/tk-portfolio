@@ -5,25 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tobias Kraft - Web Development</title>
-
-    <!-- Standard-Favicon -->
-    <link rel="icon" href="/favicon.277a906c.ico" type="image/x-icon">
-    <!-- PNG-Icons für verschiedene Größen -->
-    <link rel="icon" href="/favicon-16x16.d3bcaab0.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/favicon-32x32.a2ea98cd.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/favicon-192x192.6e59aaad.png" sizes="192x192" type="image/png">
-    <link rel="icon" href="/favicon-512x512.5051567d.png" sizes="512x512" type="image/png">
-    <!-- Apple Touch Icon für iOS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.be471df2.png">
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/assets/site.webmanifest">
-
-    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <!-- JS -->
     <script src="/index.75a63213.js"></script><link rel="stylesheet" href="/index.9fd9ad8a.css"><link rel="stylesheet" href="/about.454bbfc0.css"><script src="/about.90c04c5e.js" defer=""></script>
 </head>
 
