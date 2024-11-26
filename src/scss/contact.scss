@@ -45,8 +45,11 @@ $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
     }
   }
   a:hover {
-    color: $white;
+    color: #fff;
     // transform: scale(1.5);
+  }
+  .x-logo:hover {
+    fill: #f09609;
   }
 }
 .sm-section {
