@@ -23,6 +23,156 @@ $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
 // @import 'bootstrap/scss/bootstrap';
 
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; // Space between the two main sections
+  justify-content: space-between;
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .flex-50-gt-sm {
+    flex: 1 1 50%;
+    @media (max-width: 768px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  .waypoint {
+    &.animated {
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+    }
+
+    &.slide-in-left {
+      animation-name: slideInLeft;
+      padding: 0;
+    }
+
+    &.slide-in-right {
+      animation-name: slideInRight;
+      padding: 0;
+    }
+  }
+
+  .me {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  .label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .highlight {
+    color: #e74c3c; // Red color for highlighting links
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .page-link {
+    color: #3498db; // Blue color for "contact" link
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .bars-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    border: 1px solid $primary-color;
+    background-color: #000;
+    // background-color: #fff;
+    border-radius: 15px;
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    .bar.fill {
+      background-color: $primary-color;
+      // background-color: #fff;
+      border: 2px solid #fff;
+      border: 1px solid $primary-color;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 1rem;
+      border-radius: 15px;
+      border: none;
+      transition: width 0.5s ease-in-out;
+    }
+
+    .tag {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem; // Abstand zwischen Logo und Text
+      // border-radius: 5px;
+      // border: 2px solid $primary-color;
+      font-family: $ter-font;
+      color: #fff;
+      // color: #000;
+      // color: $primary-color;
+      font-weight: bold;
+      font-size: 1rem;
+
+      .skill-icon {
+        // width: 30px; // Logo-Größe
+        // height: 30px;
+        display: inline-block;
+      }
+    }
+
+    .flex {
+      align-items: center;
+    }
+  }
+}
+
+// Animations for slide-in effects
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 // *********************************************************
 // ---- Body ----------------------------------------------
 // *********************************************************
@@ -69,7 +219,7 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  margin-top: 2rem;
+  // margin-top: 2rem;
   font-family: $sec-font;
   font-size: 2rem;
   // color: $toggler-color-1;
