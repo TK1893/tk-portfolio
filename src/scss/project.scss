@@ -1,4 +1,4 @@
-// src\scss\code.scss
+// src\scss\project.scss
 @import url('./fonts/satoshi.css');
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 @import 'bootstrap/scss/bootstrap';
@@ -21,56 +21,97 @@ $toggler-color-1: #00aba9; // Farbe für den ersten Strich des Toggler-Buttons
 $toggler-color-2: #ff00a2; // Farbe für den zweiten Strich des Toggler-Buttons
 $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
-// @import 'bootstrap/scss/bootstrap';
-
 // *********************************************************
 // ---- Body ----------------------------------------------
 // *********************************************************
 
 body {
-  // padding-top: 6rem;
-  // @media screen and (max-width: 575) {
-  //   padding-top: 5rem;
-  // }
+  padding-top: 6rem;
   margin: 0;
   background-color: black;
   font-family: $ter-font;
   color: white;
 }
 
-html,
-body {
-  background-color: black;
-  font-family: $ter-font;
-  height: 100%;
+// *********************************************************
+// ---- Grid ----------------------------------------------
+// *********************************************************
+
+.main-container {
+  // margin-top: 6rem;
+  // border: 1px solid red;
+  background-color: #000;
+}
+
+.main-row {
+  // border: 1px solid greenyellow;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.main-col {
+  // border: 1px solid orange;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  // margin-bottom: 1rem;
+  padding: 0;
 }
-
-// Main Content-Container
-.main-cont {
-  flex: 1; // Nimmt den verfügbaren Platz zwischen Navigation und Footer ein
-  display: flex;
-  justify-content: center; // Horizontales Zentrieren
-  align-items: center; // Vertikales Zentrieren
-  // text-align: center; // Text-Inhalte zentriert
-  background-color: black;
-}
-
 // *********************************************************
 // ---- Text & Elements ------------------------------------
 // *********************************************************
+
+.card {
+  background-color: #000;
+  border: 1px solid #fff;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 0;
+  color: #fff;
+  color: $primary-color;
+  opacity: 1;
+}
+
+.card-body {
+  color: rgba(255, 255, 255, 1);
+}
+
+hr {
+  margin: 0 0 10px 0;
+  border: 0;
+  border-top: 1px solid #fff;
+  //   border-top: 1px solid $primary-color;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.custom-card-button {
+  i {
+    margin-right: 5px;
+  }
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: $sec-font;
+  color: $primary-color;
+  &:hover {
+    color: #fff;
+  }
+
+  //   border-radius: 10px;
+  //   border: 2px solid $primary-color;
+  //   border: 2px solid #000;
+}
+
 h1 {
   font-family: $sec-font;
   font-size: 4.5rem;
-  color: $primary-color;
 }
 h2 {
-  margin-top: 2rem;
   font-family: $sec-font;
   font-size: 2rem;
+  //   color: #000;
 }
 h3 {
   margin-top: 2rem;
@@ -82,9 +123,14 @@ h4 {
   margin-top: 2rem;
   font-family: $sec-font;
   font-size: 1.7rem;
-  // color: $toggler-color-3;
+  color: $primary-color;
 }
 h5 {
+  font-family: $sec-font;
+  color: white;
+}
+h6 {
+  font-size: 1.5rem;
   font-family: $sec-font;
   color: white;
 }
@@ -99,7 +145,26 @@ a {
   font-family: $sec-font;
   font-size: 1.5rem;
   color: $primary-color;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: white;
+  }
 }
+// body
+//   > div.container.main-container
+//   > div.row.main-row.site-heading-container
+//   > div
+//   > section:nth-child(4)
+//   > a:nth-child(3) {
+//   font-family: $sec-font;
+//   font-size: 1.5rem;
+//   color: $primary-color;
+//   transition: all 0.3s ease-in;
+//   :hover {
+//     transform: scale(1.5);
+//     color: white;
+//   }
+// }
 
 .list-group {
   border-color: pink;
@@ -107,191 +172,43 @@ a {
 .list-group-item {
   background-color: black;
   border-color: white;
-}
-
-// *********************************************************
-// -- ANIMATED TEXT --
-// *********************************************************
-// .animated-text {
-//   padding: 0;
-//   font-family: $sec-font;
-//   line-height: 1;
-//   opacity: 0; /* Startet unsichtbar */
-//   animation-duration: 1s; /* Dauer der Animation */
-//   animation-fill-mode: both; /* Bleibt im Endzustand */
-// }
-
-// /* Styling für Slide-In von rechts (für gerade Zeilen) */
-// .animated-text-2,
-// .animated-text-4,
-// .animated-text-6 {
-//   font-size: 8rem;
-//   animation-name: slideInRight; /* Alle sollen von rechts hereinkommen */
-//   animation-duration: 1s; /* Alle haben die gleiche Animationszeit */
-//   animation-fill-mode: forwards; /* Bleiben im Endzustand sichtbar */
-//   @media screen and (max-width: 575px) {
-//     font-size: 5rem;
-//   }
-// }
-
-// /* Styling für die "My Work" Zeile */
-// .animated-text-6 {
-//   color: $toggler-color-3;
-// }
-
-// .animated-text-6 a {
-//   text-decoration: none;
-//   animation: blinkingText 1.5s infinite;
-//   animation-delay: 1s; /* Startet nach der Slide-In-Animation */
-// }
-
-// /* Styling für Slide-In von links (für ungerade Zeilen) */
-// .animated-text-1,
-// .animated-text-3,
-// .animated-text-5,
-// .animated-text-7 {
-//   color: white;
-//   font-size: 4rem;
-//   animation-name: slideInLeft;
-
-//   @media screen and (max-width: 575px) {
-//     font-size: 2.5rem;
-//   }
-// }
-
-// /* Keyframes für Slide-In von links */
-// @keyframes slideInLeft {
-//   0% {
-//     transform: translateX(-100%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//   }
-// }
-
-// /* Keyframes für Slide-In von rechts */
-// @keyframes slideInRight {
-//   0% {
-//     transform: translateX(100%);
-//     opacity: 0; /* Startet unsichtbar */
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1; /* Wird sichtbar */
-//   }
-// }
-
-// /* Keyframes für den Blink-Effekt */
-// @keyframes blinkingText {
-//   0%,
-//   100% {
-//     opacity: 1; /* Voll sichtbar */
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00a2, 0 0 30px #ff00a2,
-//       0 0 40px #ff00a2, 0 0 50px #ff00a2, 0 0 60px #ff00a2;
-//   }
-//   50% {
-//     opacity: 0.3; /* Teilweise ausgeblendet */
-//     text-shadow: 0 0 2px #fff, 0 0 4px #ff00a2, 0 0 8px #ff00a2;
-//   }
-// }
-
-.animated-text {
-  padding: 0;
-  font-family: $sec-font;
-  line-height: 1;
-  opacity: 0; /* Startet unsichtbar */
-  // animation-duration: 1s; /* Dauer der Animation */
-  // animation-fill-mode: both; /* Bleibt im Endzustand */
-}
-
-.animated-text-2,
-.animated-text-4,
-.animated-text-6 a {
-  font-size: 8rem;
-  @media screen and (max-width: 575px) {
-    font-size: 5rem;
-  }
-}
-.animated-text-2 {
-  color: #00aba9;
-  animation-name: slideInRight;
-  animation-duration: 1s; /* Dauer der Animation */
-  animation-fill-mode: both; /* Bleibt im Endzustand */
-}
-.animated-text-4 {
-  color: $toggler-color-2;
-  animation-name: slideInRight;
-  animation-duration: 1s; /* Dauer der Animation */
-  animation-fill-mode: both; /* Bleibt im Endzustand */
-}
-.animated-text-6 {
-  animation-name: slideInRight;
-  animation-duration: 1s; /* Dauer der Animation */
-  animation-fill-mode: both; /* Bleibt im Endzustand */
-  a {
-    color: $toggler-color-3;
-    text-decoration: none;
-    animation: blinkingAndPumpingText 8s infinite;
-    animation-delay: 1s; /* Startet nach der Slide-In-Animation */
-  }
-}
-
-.animated-text-1,
-.animated-text-3,
-.animated-text-5,
-.animated-text-7 {
   color: white;
-  font-size: 4rem;
-  animation-name: slideInLeft;
-  animation-duration: 1s; /* Dauer der Animation */
-  animation-fill-mode: both; /* Bleibt im Endzustand */
-
-  @media screen and (max-width: 575px) {
-    font-size: 2.5rem;
-  }
+  opacity: 1;
 }
 
-@keyframes slideInLeft {
+// *********************************************************
+// ---- Laufschrift ---------------------------------------
+// *********************************************************
+
+/* Container für den Lauftext */
+.marquee-container {
+  width: 100%; /* Breite des Containers */
+  height: auto;
+  overflow: hidden; /* Verhindert das Überlaufen des Textes */
+  white-space: nowrap; /* Text in einer Zeile halten */
+  box-sizing: border-box;
+}
+
+/* Lauftext selbst */
+.marquee-text {
+  font-family: $sec-font;
+  font-size: 7rem;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-left: 100%; /* Start außerhalb des Containers */
+  animation: marquee 10s linear infinite; /* Animation */
+}
+
+/* Keyframes für die Lauftext-Animation */
+@keyframes marquee {
   0% {
+    transform: translateX(0);
+  } /* Start von rechts */
+  100% {
     transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Keyframes für den Blink-Effekt */
-@keyframes blinkingAndPumpingText {
-  0% {
-    text-shadow: 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2,
-      0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2; /* Textschatten unsichtbar */
-    font-size: 8rem; /* Ausgangsgröße */
-  }
-  50% {
-    text-shadow: 0 0 10px #ff00a2, 0 0 20px #ff00a2, 0 0 30px #ff00a2,
-      0 0 40px #ff00a2, 0 0 50px #ff00a2, 0 0 60px #ff00a2, 0 0 70px #ff00a2; /* Textschatten sichtbar */
-    font-size: 8.2rem; /* Schriftgröße wächst */
-  }
-  100% {
-    text-shadow: 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2,
-      0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2; /* Textschatten unsichtbar */
-    font-size: 8rem; /* Schriftgröße schrumpft zurück */
-  }
+  } /* Ende links außen */
 }
 
 // *********************************************************

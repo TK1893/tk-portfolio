@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,21 +23,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- JS -->
-    <script type="module" src="js/index.js"></script>
-
+    <script type="module" src="js/projects.js"></script>
 </head>
 
 <body>
     <!-- NAVIGATION -->
-    <!-- <nav class="navbar fixed-top"> -->
-    <nav class="navbar mb-5">
+    <nav class="navbar fixed-top">
         <div class="container navigation">
             <!-- BRAND -->
             <a class="navbar-brand" href="index.html">Tobias Kraft</a>
 
             <!-- BUTTON TOGGLER -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <div class="tripple-line-container" id="tripple-line-container">
                     <hr class="custom-hr hr-1">
                     <hr class="custom-hr hr-2">
@@ -57,10 +55,9 @@
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
                         <!-- MENÜ-LINKS (Hauptmenü-Links) -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="about.html">About Me</a>
@@ -71,7 +68,7 @@
 
                         <!-- CODE DROP-DOWN-MENU (CODE) -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Code
                             </a>
@@ -79,7 +76,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="kraftflix-angular.html">Kraftflix Angular</a>
+                                <li><a class="dropdown-item active" href="kraftflix-angular.html">Kraftflix Angular</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -104,10 +101,6 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="pokeapp.html">Pokédex</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="projects.html">More Projects ...</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -225,79 +218,72 @@
     </nav>
 
     <!-- MAIN CONTENT-->
-    <!-- <div class="container main-cont d-flex align-items-center">
-        <div class="row w-100">
-            <div class="col">
-                <div class="animated-text animated-text-1" style="--index: 1;">
-                    Hello
-                </div>
+    <div class="container main-container mb-5">
 
-                <div class="animated-text animated-text-2" style="--index: 2;">
-                    World . . .
-                </div>
-
-                <div class="animated-text animated-text-3" style="--index: 3;">
-                    Please
-                </div>
-
-                <div class="animated-text animated-text-4" style="--index: 4;">
-                    Check Out
-                </div>
-
-                <div class="animated-text animated-text-5 wobble-text" style="--index: 5;">
-                    <a href="meet.html">
-                        MY Code !!
-
-                    </a>
+        <!-- LAUF-TEXT -->
+        <div class="row main-row my-5">
+            <div class="col-11 col-lg-10 main-col align-content-center">
+                <div class="marquee-container">
+                    <p class="marquee-text"> Things I've been working on. </p>
                 </div>
             </div>
         </div>
-    </div> -->
 
-    <!-- MAIN CONTENT-->
-    <div class="container main-cont d-flex align-items-center">
-        <div class="row w-100">
+        <!-- Cards -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 mx-2">
             <div class="col">
-                <div class="animated-text animated-text-1 ">
-                    Hello World, I'm
+                <div class="card">
+                    <img src="images/kraftflix-ang-03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Kraftflix Angular</h2>
+                        <hr>
+                        <p class="card-text">
+                            Angular Single-Page-Application (SPA).
+                        </p>
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="kraftflix-angular.html" class="btn custom-card-button">
+                            <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                        </a>
+                    </div>
                 </div>
-
-                <div class="animated-text animated-text-2 ">
-                    Tobias Kraft.
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
                 </div>
-
-                <div class="animated-text animated-text-3 ">
-                    I'm a
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
                 </div>
-
-                <div class="animated-text animated-text-4 ">
-                    Full-Stack Web Developer.
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
                 </div>
-
-                <div class="animated-text animated-text-5 ">
-                    <!-- <i class="bi bi-arrow-down-right-circle-fill"></i> -->
-                    <i class="bi bi-arrow-down-circle-fill"></i>
-                    <span class="mx-3"> Please Check out </span>
-                    <!-- <i class="bi bi-arrow-down-left-circle-fill"></i> -->
-                    <!-- <i class="bi bi-arrow-down-circle-fill"></i> -->
-                </div>
-
-                <div class="animated-text animated-text-6 blinking">
-                    <a href="projects.html">
-                        My Work.
-
-                    </a>
-                </div>
-                <!-- <div class="animated-text animated-text-7 ">
-                    <i class="bi bi-arrow-up-circle-fill"></i>
-                </div> -->
-
             </div>
         </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="container footer mt-5">
+    <div class="container footer my-3">
         <!-- STRIPES -->
         <div class="row footer-stripes-row">
             <div class="col footer-stripes-col footer-stripes mx-0">
@@ -330,6 +316,7 @@
         </div>
         <!-- <p class="text-center">&copy; 2024 Tobias Kraft</p> -->
     </div>
+
 </body>
 
 </html>
