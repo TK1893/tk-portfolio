@@ -21,8 +21,6 @@ $toggler-color-1: #00aba9; // Farbe für den ersten Strich des Toggler-Buttons
 $toggler-color-2: #ff00a2; // Farbe für den zweiten Strich des Toggler-Buttons
 $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
-// @import 'bootstrap/scss/bootstrap';
-
 .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -50,12 +48,10 @@ $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
     &.slide-in-left {
       animation-name: slideInLeft;
-      padding: 0;
     }
 
     &.slide-in-right {
       animation-name: slideInRight;
-      padding: 0;
     }
   }
 
@@ -101,9 +97,8 @@ $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
     height: 40px;
     border: 1px solid #fff;
     border: 1px solid $primary-color;
+    background-color: rgba(255, 255, 255, 0.9);
     background-color: #000;
-    // background-color: #fff;
-    border-radius: 15px;
     border-radius: 25px;
 
     overflow: hidden;
@@ -118,7 +113,7 @@ $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
       align-items: center;
       justify-content: flex-start;
       padding-left: 1rem;
-      border-radius: 15px;
+      border-radius: 25px;
       border: none;
       transition: width 0.5s ease-in-out;
     }
@@ -141,6 +136,9 @@ $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
         // width: 30px; // Logo-Größe
         // height: 30px;
         display: inline-block;
+      }
+      i {
+        width: 40px;
       }
     }
 

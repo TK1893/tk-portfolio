@@ -112,6 +112,7 @@ a {
 // *********************************************************
 // -- ANIMATED TEXT --
 // *********************************************************
+.animated-text,
 .animated-text {
   font-family: $sec-font;
   // padding: 0;
@@ -126,6 +127,7 @@ a {
   animation-delay: calc(var(--index) * 0.5s); // Verzögert jede Zeile leicht
   // font-size: 6rem;
   font-size: 4rem;
+  text-decoration: none;
 
   @media screen and (max-width: 575px) {
     // font-size: 4rem;
@@ -135,8 +137,8 @@ a {
 .animated-text-1,
 .animated-text-3,
 .animated-text-5 a {
-  // font-size: 9rem;
-  font-size: 8rem;
+  // font-size: 8rem;
+  font-size: 6rem;
 
   @media screen and (max-width: 575px) {
     // font-size: 6rem;
@@ -172,12 +174,16 @@ a {
   70% {
     transform: translateX(0); // Stößt an den linken Rand
   }
-  80% {
-    transform: translateX(-10px); // Leichtes Wabbern nach links
-  }
-  90% {
-    transform: translateX(5px); // Zurück nach rechts
-  }
+  // 80% {
+  //   transform: translateX(-10px); // Leichtes Wabbern nach links
+  // }
+  // 90% {
+  //   transform: translateX(5px); // Zurück nach rechts
+  // }
+  // 100% {
+  //   transform: translateX(0); // Am linken Rand stehenbleiben
+  //   opacity: 1; // Am Ende sichtbar bleiben
+  // // }
   100% {
     transform: translateX(0); // Am linken Rand stehenbleiben
     opacity: 1; // Am Ende sichtbar bleiben
@@ -200,8 +206,8 @@ a {
 // -- Anwenden der Wabbern-Animation die letzte Textzeile
 //
 .wobble-text {
-  animation: slideIn 3s ease-in-out forwards, wobble 1s ease-in-out infinite;
-  animation-delay: calc(var(--index) * 0.5s), calc(var(--index) * 0.5s + 3s); // Verzögert jede Zeile leicht
+  // animation: slideIn 3s ease-in-out forwards, wobble 1s ease-in-out infinite;
+  // animation-delay: calc(var(--index) * 0.5s), calc(var(--index) * 0.5s + 3s); // Verzögert jede Zeile leicht
   transition: all 2s ease-in-out;
   &:hover {
     scale: 1.2;
