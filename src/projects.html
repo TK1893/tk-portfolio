@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
     <!-- NAVIGATION -->
     <nav class="navbar fixed-top">
         <div class="container navigation">
@@ -50,7 +51,6 @@
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tobias Kraft</h5>
                     <button type="button" class="btn-close px-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
-                    <hr class="divider">
                 </div>
 
                 <div class="offcanvas-body">
@@ -66,7 +66,7 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
 
-                        <!-- CODE DROP-DOWN-MENU (CODE) -->
+                        <!-- DROP-DOWN-MENU (CODE) -->
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -76,7 +76,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item active" href="kraftflix-angular.html">Kraftflix Angular</a>
+                                <li><a class="dropdown-item" href="kraftflix-angular.html">Kraftflix Angular</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -86,7 +86,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item  " href="./meet.html">Meet</a></li>
+                                <li><a class="dropdown-item " href="./meet.html">Meet</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -101,6 +101,10 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="pokeapp.html">Pokédex</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="projects.html">More Projects ...</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -218,67 +222,149 @@
     </nav>
 
     <!-- MAIN CONTENT-->
-    <div class="container main-container mb-5">
+    <div class="container main-container">
 
         <!-- LAUF-TEXT -->
         <div class="row main-row my-5">
             <div class="col-11 col-lg-10 main-col align-content-center">
                 <div class="marquee-container">
-                    <p class="marquee-text"> Things I've been working on. </p>
+                    <p class="marquee-text"> Projects I have worked on ... </p>
                 </div>
             </div>
         </div>
 
-        <!-- Cards -->
-        <div class="row row-cols-1 row-cols-md-2 g-4 mx-2">
-            <div class="col">
-                <div class="card">
-                    <img src="images/kraftflix-ang-03.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-title">Kraftflix Angular</h2>
-                        <hr>
-                        <p class="card-text">
-                            Angular Single-Page-Application (SPA).
-                        </p>
+        <!-- CARDS -->
+        <div class="row main-row mb-5">
+            <div class="col-11 col-lg-10 main-col">
+                <h1>Latest Work</h1>
+                <p>
+                    Besides my day-to-day work, this is where I keep track of all the things I've been doing over the
+                    years,
+                    whether it's a client project, study projects or just experiments.
+                </p>
+                <h3 class="mb-4">Here are some of the projects I have worked on ... </h3>
 
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- CARD-1 [ANGULAR]-->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/kraftflix-ang-03.png" class="card-img-top"
+                                style=" object-position: top-left;" alt="kraftflix-image">
+                            <div class="card-footer">
+                                <div class="heading-block">
+                                    <h2 class="card-title">Kraftflix - Angular</h2>
+                                    <p class="card-text">
+                                        An Angular Single Page App
+                                    </p>
+                                </div>
+
+                                <a href="kraftflix-angular.html" class="btn custom-card-button">
+                                    <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="kraftflix-angular.html" class="btn custom-card-button">
-                            <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
-                        </a>
+
+                    <!-- CARD-2 [CHAT]-->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/Kraftchat-01.png" class="card-img-top" style="object-fit: contain;"
+                                alt="Image Kraftchat">
+                            <div class="card-footer">
+                                <div class="heading-block">
+                                    <h2 class="card-title">KraftChat</h2>
+                                    <p class="card-text">
+                                        A Mobile Real-Time Chat App
+                                    </p>
+                                </div>
+
+                                <a href="kraftchat.html" class="btn custom-card-button">
+                                    <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- CARD-3 [MEET] -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/Meet-01.png" class="card-img-top" alt="Image Kraftchat">
+                            <div class="card-footer">
+                                <div class="heading-block">
+                                    <h2 class="card-title">Meet</h2>
+                                    <p class="card-text">
+                                        A Progressive Web App
+                                    </p>
+                                </div>
+
+                                <a href="meet.html" class="btn custom-card-button">
+                                    <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD-4 [REACT] -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/Kraftflix-react-03.png" class="card-img-top" alt="Image Kraftchat">
+                            <div class="card-footer">
+                                <div class="heading-block">
+                                    <h2 class="card-title">KraftFlix - React</h2>
+                                    <p class="card-text">
+                                        A React Single Page App
+                                    </p>
+                                </div>
+
+                                <a href="kraftflix-react.html" class="btn custom-card-button">
+                                    <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD-5 [MOVIE-API] -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/skills/nodejsIconWhite.svg" class="card-img-top" alt="Image Kraftchat">
+                            <div class="card-footer">
+                                <div class="heading-block">
+                                    <h2 class="card-title">Movie API</h2>
+                                    <p class="card-text">
+                                        A Node.js / Express.js RESTful API
+                                    </p>
+                                </div>
+
+                                <a href="movie-api.html" class="btn custom-card-button">
+                                    <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD-6 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/Pokehome-01.png" class=" card-img-top" alt="Image Kraftchat">
+                            <div class="card-footer">
+                                <div class="heading-block">
+                                    <h2 class="card-title">Pokédex</h2>
+                                    <p class="card-text">
+                                        An Interactive JavaScript Web App
+                                    </p>
+                                </div>
+
+                                <a href="pokeapp.html" class="btn custom-card-button">
+                                    <i class="bi bi-arrow-right-circle-fill"></i> Visit Project Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="#" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 

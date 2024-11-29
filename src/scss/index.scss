@@ -112,90 +112,6 @@ a {
 // *********************************************************
 // -- ANIMATED TEXT --
 // *********************************************************
-// .animated-text {
-//   padding: 0;
-//   font-family: $sec-font;
-//   line-height: 1;
-//   opacity: 0; /* Startet unsichtbar */
-//   animation-duration: 1s; /* Dauer der Animation */
-//   animation-fill-mode: both; /* Bleibt im Endzustand */
-// }
-
-// /* Styling für Slide-In von rechts (für gerade Zeilen) */
-// .animated-text-2,
-// .animated-text-4,
-// .animated-text-6 {
-//   font-size: 8rem;
-//   animation-name: slideInRight; /* Alle sollen von rechts hereinkommen */
-//   animation-duration: 1s; /* Alle haben die gleiche Animationszeit */
-//   animation-fill-mode: forwards; /* Bleiben im Endzustand sichtbar */
-//   @media screen and (max-width: 575px) {
-//     font-size: 5rem;
-//   }
-// }
-
-// /* Styling für die "My Work" Zeile */
-// .animated-text-6 {
-//   color: $toggler-color-3;
-// }
-
-// .animated-text-6 a {
-//   text-decoration: none;
-//   animation: blinkingText 1.5s infinite;
-//   animation-delay: 1s; /* Startet nach der Slide-In-Animation */
-// }
-
-// /* Styling für Slide-In von links (für ungerade Zeilen) */
-// .animated-text-1,
-// .animated-text-3,
-// .animated-text-5,
-// .animated-text-7 {
-//   color: white;
-//   font-size: 4rem;
-//   animation-name: slideInLeft;
-
-//   @media screen and (max-width: 575px) {
-//     font-size: 2.5rem;
-//   }
-// }
-
-// /* Keyframes für Slide-In von links */
-// @keyframes slideInLeft {
-//   0% {
-//     transform: translateX(-100%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//   }
-// }
-
-// /* Keyframes für Slide-In von rechts */
-// @keyframes slideInRight {
-//   0% {
-//     transform: translateX(100%);
-//     opacity: 0; /* Startet unsichtbar */
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1; /* Wird sichtbar */
-//   }
-// }
-
-// /* Keyframes für den Blink-Effekt */
-// @keyframes blinkingText {
-//   0%,
-//   100% {
-//     opacity: 1; /* Voll sichtbar */
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00a2, 0 0 30px #ff00a2,
-//       0 0 40px #ff00a2, 0 0 50px #ff00a2, 0 0 60px #ff00a2;
-//   }
-//   50% {
-//     opacity: 0.3; /* Teilweise ausgeblendet */
-//     text-shadow: 0 0 2px #fff, 0 0 4px #ff00a2, 0 0 8px #ff00a2;
-//   }
-// }
 
 .animated-text {
   padding: 0;
@@ -211,7 +127,7 @@ a {
 .animated-text-6 a {
   font-size: 8rem;
   @media screen and (max-width: 575px) {
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
 }
 .animated-text-2 {
@@ -233,8 +149,14 @@ a {
   a {
     color: $toggler-color-3;
     text-decoration: none;
-    animation: blinkingAndPumpingText 8s infinite;
-    animation-delay: 1s; /* Startet nach der Slide-In-Animation */
+    i {
+      // animation: blinkingAndPumpingText 3s infinite;
+      // animation-delay: 1s; /* Startet nach der Slide-In-Animation */
+      animation: blinkingAndPumpingText 3s infinite,
+        shootOutRight 5s ease-out infinite;
+      animation-delay: 1s, 7s; /* Blinken startet sofort, Herausschießen nach 4s */
+      display: inline-block; /* Wichtig für Bewegung */
+    }
   }
 }
 
@@ -280,17 +202,29 @@ a {
   0% {
     text-shadow: 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2,
       0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2; /* Textschatten unsichtbar */
-    font-size: 8rem; /* Ausgangsgröße */
   }
   50% {
     text-shadow: 0 0 10px #ff00a2, 0 0 20px #ff00a2, 0 0 30px #ff00a2,
       0 0 40px #ff00a2, 0 0 50px #ff00a2, 0 0 60px #ff00a2, 0 0 70px #ff00a2; /* Textschatten sichtbar */
-    font-size: 8.2rem; /* Schriftgröße wächst */
   }
   100% {
     text-shadow: 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2,
       0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2, 0 0 0px #ff00a2; /* Textschatten unsichtbar */
-    font-size: 8rem; /* Schriftgröße schrumpft zurück */
+  }
+}
+
+@keyframes shootOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000%); /* Weiter als der sichtbare Bereich */
+    opacity: 1; /* Komplett unsichtbar */
   }
 }
 
