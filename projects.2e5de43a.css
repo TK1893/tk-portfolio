@@ -13223,16 +13223,20 @@ body {
 
 .card-img-top {
   object-fit: cover;
-  object-position: top;
+  object-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%;
   height: 300px;
+  padding: 1% 1% 0;
   display: block;
 }
 
 .card-footer {
   color: #ff00a2;
-  margin-top: 4px 0 0 0;
   background-color: #000;
+  border-top: 0;
+  margin-top: 8px;
   padding: 0;
 }
 

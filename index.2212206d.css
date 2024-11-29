@@ -13279,7 +13279,7 @@ a {
 
 @media screen and (width <= 575px) {
   .animated-text-2, .animated-text-4, .animated-text-6 a {
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
 }
 
