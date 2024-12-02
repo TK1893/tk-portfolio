@@ -150,11 +150,10 @@ a {
     color: $toggler-color-3;
     text-decoration: none;
     i {
-      // animation: blinkingAndPumpingText 3s infinite;
-      // animation-delay: 1s; /* Startet nach der Slide-In-Animation */
+      transform: scaleX(-1);
       animation: blinkingAndPumpingText 3s infinite,
         shootOutRight 5s ease-out infinite;
-      animation-delay: 1s, 7s; /* Blinken startet sofort, Herausschießen nach 4s */
+      animation-delay: 1s, 6s; /* Blinken startet sofort, Herausschießen nach 4s */
       display: inline-block; /* Wichtig für Bewegung */
     }
   }
@@ -215,15 +214,15 @@ a {
 
 @keyframes shootOutRight {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) scaleX(-1);
     opacity: 1;
   }
-  20% {
-    transform: translateX(0);
+  30% {
+    transform: translateX(0) scaleX(-1);
     opacity: 1;
   }
   100% {
-    transform: translateX(1000%); /* Weiter als der sichtbare Bereich */
+    transform: translateX(-1000%) scaleX(-1); /* Weiter als der sichtbare Bereich */
     opacity: 1; /* Komplett unsichtbar */
   }
 }
@@ -246,18 +245,19 @@ a {
 
 // ----  Brand ----
 .navbar-brand {
-  color: white;
+  // color: white;
+  color: $primary-color;
   font-family: $pri-font;
   // font-size: 4rem;
   font-size: 3rem;
   &:hover {
-    color: $primary-color;
+    color: #fff;
   }
   &.active {
-    color: $primary-color !important;
+    color: #fff !important;
   }
   &.show {
-    color: $primary-color !important;
+    color: #fff !important;
   }
   @media screen and (max-width: 575px) {
     // font-size: 2.4rem;

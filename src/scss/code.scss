@@ -21,8 +21,43 @@ $toggler-color-1: #00aba9; // Farbe für den ersten Strich des Toggler-Buttons
 $toggler-color-2: #ff00a2; // Farbe für den zweiten Strich des Toggler-Buttons
 $toggler-color-3: #f09609; // Farbe für den dritten Strich des Toggler-Buttons
 
-// @import 'bootstrap/scss/bootstrap';
+// *********************************************************
+// ---- SLIDE-IN-ANIMATION ---------------------------------
+// *********************************************************
+// .animated {
+//   animation-duration: 1.5s;
+//   animation-fill-mode: both;
+// }
+// .slide-in-left {
+//   animation-name: slideInLeft;
+// }
 
+// .slide-in-right {
+//   animation-name: slideInRight;
+// }
+
+// // Animations for slide-in effects
+// @keyframes slideInLeft {
+//   0% {
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideInRight {
+//   0% {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
 // *********************************************************
 // ---- Body ----------------------------------------------
 // *********************************************************
@@ -257,18 +292,19 @@ a {
 
 // ----  Brand ----
 .navbar-brand {
-  color: white;
+  // color: white;
+  color: $primary-color;
   font-family: $pri-font;
   // font-size: 4rem;
   font-size: 3rem;
   &:hover {
-    color: $primary-color;
+    color: #fff;
   }
   &.active {
-    color: $primary-color !important;
+    color: #fff !important;
   }
   &.show {
-    color: $primary-color !important;
+    color: #fff !important;
   }
   @media screen and (max-width: 575px) {
     // font-size: 2.4rem;

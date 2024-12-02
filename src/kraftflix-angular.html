@@ -234,11 +234,12 @@
         </div>
 
         <!-- APP -->
-        <div class="row main-row site-heading-container">
+        <div class="row main-row site-heading-container ">
             <div class="col-11 col-lg-10 main-col site-heading">
 
                 <!-- CAROUSEL -->
-                <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div id="carouselExampleIndicators" class="animated slide-in-left carousel slide mb-5 "
+                    data-bs-ride="carousel">
                     <ol class="carousel-indicators list-unstyled">
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
@@ -293,40 +294,52 @@
                 </div>
 
                 <!-- APP -->
-                <section class="mb-5">
+                <div class="mb-5">
                     <div class="mb-5"></div>
-                    <h1 class="mt-5">
+                    <h1 class="mt-5 animated slide-in-right">
                         Kraftflix
                     </h1>
                     <!-- PROJECT -->
-                    <p>
-                        Kraftflix is a single-page application (SPA) developed in Angular, designed to allow movie
-                        enthusiasts to explore films, learn about directors and genres, and create a personal profile to
-                        save their favorite movies. The app is connected to an existing RESTful API developed in a
-                        previous project (Kraftflix-API). The user and movie data are stored in a personally created
-                        MongoDB database.
+                    <section class="animated slide-in-right">
+                        <p>
+                            Kraftflix is a single-page application (SPA) developed in Angular, designed to allow movie
+                            enthusiasts to explore films, learn about directors and genres, and create a personal
+                            profile to
+                            save their favorite movies. The app is connected to an existing RESTful API developed in a
+                            previous project (Kraftflix-API). The user and movie data are stored in a personally created
+                            MongoDB database.
+                        </p>
+                        <p>
+                            This project covers the development of the front end using Angular, alongside creating
+                            comprehensive documentation and using Agile methodologies (Kanban, user stories, and story
+                            points).
+                        </p>
+                    </section>
 
-                        This project covers the development of the front end using Angular, alongside creating
-                        comprehensive documentation and using Agile methodologies (Kanban, user stories, and story
-                        points).
-                    </p>
 
                     <!-- PROJECT DESCRIPTION-->
-                    <h4>
-                        Project Description
-                    </h4>
-                    <p>
-                        The Kraftflix Angular App is a user-friendly and responsive application for film lovers. Users
-                        can log in, browse movies, view detailed information about a single movie, directors and genres,
-                        and create a user profile to save their favorite films.
+                    <section class="animated slide-in-left">
+                        <h4>
+                            Project Description
+                        </h4>
+                        <p>
+                            The Kraftflix Angular App is a user-friendly and responsive application for film lovers.
+                            Users
+                            can log in, browse movies, view detailed information about a single movie, directors and
+                            genres,
+                            and create a user profile to save their favorite films.
 
-                        The app interacts with an existing server-side RESTful API to retrieve data and presents it in
-                        an Angular-based interface. This SPA ensures accessibility and a consistent experience across
-                        all devices.
-                    </p>
+                            The app interacts with an existing server-side RESTful API to retrieve data and presents it
+                            in
+                            an Angular-based interface. This SPA ensures accessibility and a consistent experience
+                            across
+                            all devices.
+                        </p>
+                    </section>
+
 
                     <!-- LIVE PAGE SECTION -->
-                    <section>
+                    <section class="animated slide-in-right">
                         <div class="footer-stripes my-5">
                             <div class="stripe stripe-1"></div>
                             <div class="stripe stripe-2"></div>
@@ -350,237 +363,259 @@
                     </section>
 
                     <!-- KEY FEATURES -->
-                    <h4>
-                        Key Features
-                    </h4>
-                    <ul class="list-group" data-bs-theme="dark">
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Welcome View</h5>
-                            </div>
-                            <p class="mb-1">· Users can either log in or register a new account.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Movie List View</h5>
-                            </div>
+                    <section class="animated slide-in-left">
+                        <h4>
+                            Key Features
+                        </h4>
+                        <ul class="list-group" data-bs-theme="dark">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Welcome View</h5>
+                                </div>
+                                <p class="mb-1">· Users can either log in or register a new account.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Movie List View</h5>
+                                </div>
 
-                            <p class="mb-1">· Displays all movies available in the MongoDB database retrieved from
-                                the API.</p>
-                            <p class="mb-1">· Each movie is displayed on a separate Angular Material Card.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Single Movie Information</h5>
-                            </div>
+                                <p class="mb-1">· Displays all movies available in the MongoDB database retrieved from
+                                    the API.</p>
+                                <p class="mb-1">· Each movie is displayed on a separate Angular Material Card.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Single Movie Information</h5>
+                                </div>
 
-                            <p class="mb-1">· The user can use buttons on the single movie cards to display detailed
-                                views with additional information about the desired movie.</p>
-                            <p class="mb-1">· Each card contains three buttons:</p>
-                            <p class="mx-3 mb-1">1. Director - Provides information about the director of the selected
-                                movie.
-                            </p>
-                            <p class="mx-3 mb-1">2. Genre - Shows details about the genre of the selected movie.</p>
-                            <p class="mx-3 mb-1">3. Synopsis - Displays the plot of the selected movie.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">User Profile</h5>
-                            </div>
+                                <p class="mb-1">· The user can use buttons on the single movie cards to display detailed
+                                    views with additional information about the desired movie.</p>
+                                <p class="mb-1">· Each card contains three buttons:</p>
+                                <p class="mx-3 mb-1">1. Director - Provides information about the director of the
+                                    selected
+                                    movie.
+                                </p>
+                                <p class="mx-3 mb-1">2. Genre - Shows details about the genre of the selected movie.</p>
+                                <p class="mx-3 mb-1">3. Synopsis - Displays the plot of the selected movie.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">User Profile</h5>
+                                </div>
 
-                            <p class="mb-1">· Users can create a profile with personal details and save their favorite
-                                movies.</p>
-                            <p class="mb-1">· After registering, users can edit their profile information and delete
-                                their profile.
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Routing</h5>
-                            </div>
-                            <p class="mb-1">· The app utilizes Angular Routing to navigate between the different views.
-                            </p>
-                        </li>
-                    </ul>
+                                <p class="mb-1">· Users can create a profile with personal details and save their
+                                    favorite
+                                    movies.</p>
+                                <p class="mb-1">· After registering, users can edit their profile information and delete
+                                    their profile.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Routing</h5>
+                                </div>
+                                <p class="mb-1">· The app utilizes Angular Routing to navigate between the different
+                                    views.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+
 
                     <!-- TECHNOLOGIES USED -->
-                    <h4>
-                        Technologies Used
-                    </h4>
-                    <ul class="list-group" data-bs-theme="dark">
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Angular (Version 18.2.9)</h5>
-                            </div>
-                            <p class="mb-1">· The frontend framework for building the SPA.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Angular Material
-                                </h5>
-                            </div>
-                            <p class="mb-1">· Used to create a responsive and attractive UI. Angular Material provides
-                                pre-built UI components that enhance the user experience.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">TypeScript</h5>
-                            </div>
-                            <p class="mb-1">· Used as the primary language for Angular development.
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">RxJS</h5>
-                            </div>
-                            <p class="mb-1">· For managing asynchronous data streams and handling errors in API calls.
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Angular Router </h5>
-                            </div>
-                            <p class="mb-1">· used for in-app navigation with URL paths between the different Views
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Node.js and npm</h5>
-                            </div>
-                            <p class="mb-1">· For environment setup and dependency management.
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Angular CLI</h5>
-                            </div>
-                            <p class="mb-1">· Facilitates project setup and management.
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">GitHub Pages</h5>
-                            </div>
-                            <p class="mb-1">· For App hosting.
+                    <section class="animated slide-in-right">
+                        <h4>
+                            Technologies Used
+                        </h4>
+                        <ul class="list-group" data-bs-theme="dark">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Angular (Version 18.2.9)</h5>
+                                </div>
+                                <p class="mb-1">· The frontend framework for building the SPA.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Angular Material
+                                    </h5>
+                                </div>
+                                <p class="mb-1">· Used to create a responsive and attractive UI. Angular Material
+                                    provides
+                                    pre-built UI components that enhance the user experience.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">TypeScript</h5>
+                                </div>
+                                <p class="mb-1">· Used as the primary language for Angular development.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">RxJS</h5>
+                                </div>
+                                <p class="mb-1">· For managing asynchronous data streams and handling errors in API
+                                    calls.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Angular Router </h5>
+                                </div>
+                                <p class="mb-1">· used for in-app navigation with URL paths between the different Views
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Node.js and npm</h5>
+                                </div>
+                                <p class="mb-1">· For environment setup and dependency management.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Angular CLI</h5>
+                                </div>
+                                <p class="mb-1">· Facilitates project setup and management.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">GitHub Pages</h5>
+                                </div>
+                                <p class="mb-1">· For App hosting.
 
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Trello</h5>
-                            </div>
-                            <p class="mb-1">· for Agile project management
-                            </p>
-                            <p class="mb-1">· Kanban Board used to organize tasks with user stories and track progress
-                                using story points.
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">TypeDoc</h5>
-                            </div>
-                            <p class="mb-1">· For generating inline code documentation.
-                            </p>
-                            <p class="mb-1">· For environment setup and dependency management.
-                            </p>
-                        </li>
-                    </ul>
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Trello</h5>
+                                </div>
+                                <p class="mb-1">· for Agile project management
+                                </p>
+                                <p class="mb-1">· Kanban Board used to organize tasks with user stories and track
+                                    progress
+                                    using story points.
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">TypeDoc</h5>
+                                </div>
+                                <p class="mb-1">· For generating inline code documentation.
+                                </p>
+                                <p class="mb-1">· For environment setup and dependency management.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+
 
                     <!-- APP COMPONENTS -->
-                    <h4>
-                        App Components
-                    </h4>
-                    <ul class="list-group" data-bs-theme="dark">
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">App-Component</h5>
-                            </div>
-                            <p class="mb-1">· Root component of the app. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Welcome-Page-Component </h5>
-                            </div>
-                            <p class="mb-1">· App welcome page.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">User-Registration-Form-Component </h5>
-                            </div>
-                            <p class="mb-1">· User registration form.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">User-Login-Form-Component </h5>
-                            </div>
-                            <p class="mb-1">· User login form. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Movie-Card-Component </h5>
-                            </div>
-                            <p class="mb-1">· Displays movie info cards. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Info-Director-Component</h5>
-                            </div>
-                            <p class="mb-1">· Shows director info. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Info-Genre-Component </h5>
-                            </div>
-                            <p class="mb-1">· Shows genre info. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Info-Movie-Component </h5>
-                            </div>
-                            <p class="mb-1">· Shows movie plot. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Navbar-Component </h5>
-                            </div>
-                            <p class="mb-1">· Navigation bar of the app. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">User-Profile-Component </h5>
-                            </div>
-                            <p class="mb-1">· User profile page. </p>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">User-Update-Form-Component </h5>
-                            </div>
-                            <p class="mb-1">· User data update form. </p>
-                        </li>
+                    <section class="animated slide-in-left">
+                        <h4>
+                            App Components
+                        </h4>
+                        <ul class="list-group" data-bs-theme="dark">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">App-Component</h5>
+                                </div>
+                                <p class="mb-1">· Root component of the app. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Welcome-Page-Component </h5>
+                                </div>
+                                <p class="mb-1">· App welcome page.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">User-Registration-Form-Component </h5>
+                                </div>
+                                <p class="mb-1">· User registration form.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">User-Login-Form-Component </h5>
+                                </div>
+                                <p class="mb-1">· User login form. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Movie-Card-Component </h5>
+                                </div>
+                                <p class="mb-1">· Displays movie info cards. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Info-Director-Component</h5>
+                                </div>
+                                <p class="mb-1">· Shows director info. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Info-Genre-Component </h5>
+                                </div>
+                                <p class="mb-1">· Shows genre info. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Info-Movie-Component </h5>
+                                </div>
+                                <p class="mb-1">· Shows movie plot. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Navbar-Component </h5>
+                                </div>
+                                <p class="mb-1">· Navigation bar of the app. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">User-Profile-Component </h5>
+                                </div>
+                                <p class="mb-1">· User profile page. </p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">User-Update-Form-Component </h5>
+                                </div>
+                                <p class="mb-1">· User data update form. </p>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </section>
 
-                    <h4>
-                        Documentation and Commenting
-                    </h4>
-                    <p>
-                        The project includes TypeDoc for code documentation. All documentation files are available in
-                        the docs folder
-                        in the GitHub Repository.
-                    </p>
-                    <h4>
-                        Kanban Board and Agile Methods
-                    </h4>
-                    <p>
-                        For Agile Project Management, a Kanban Board (Trello) was used .
-                        Tasks were organized as User Stories and estimated with Story Points.
-                        Tasks were categorized as follows:
-                    </p>
-                    <p class="mb-1">· To Do - Tasks pending completion. </p>
-                    <p class="mb-1">· In Progress - Tasks currently being worked on. </p>
-                    <p>· Done - Completed tasks. </p>
+                    <!-- DOCUMENTING & COMMENTING -->
+                    <section class="animated slide-in-right">
+                        <h4>
+                            Documentation and Commenting
+                        </h4>
+                        <p>
+                            The project includes TypeDoc for code documentation. All documentation files are available
+                            in
+                            the docs folder
+                            in the GitHub Repository.
+                        </p>
+                    </section>
 
-                </section>
+                    <!-- KANBAN BOARD -->
+                    <section class="animated slide-in-left">
+                        <h4>
+                            Kanban Board and Agile Methods
+                        </h4>
+                        <p>
+                            For Agile Project Management, a Kanban Board (Trello) was used .
+                            Tasks were organized as User Stories and estimated with Story Points.
+                            Tasks were categorized as follows:
+                        </p>
+                        <p class="mb-1">· To Do - Tasks pending completion. </p>
+                        <p class="mb-1">· In Progress - Tasks currently being worked on. </p>
+                        <p>· Done - Completed tasks. </p>
+                    </section>
+
+                </div>
 
             </div>
         </div>

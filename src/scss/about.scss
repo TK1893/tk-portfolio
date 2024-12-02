@@ -337,18 +337,19 @@ thead .h-table {
 
 // ----  Brand ----
 .navbar-brand {
-  color: white;
+  // color: white;
+  color: $primary-color;
   font-family: $pri-font;
   // font-size: 4rem;
   font-size: 3rem;
   &:hover {
-    color: $primary-color;
+    color: #fff;
   }
   &.active {
-    color: $primary-color !important;
+    color: #fff !important;
   }
   &.show {
-    color: $primary-color !important;
+    color: #fff !important;
   }
   @media screen and (max-width: 575px) {
     // font-size: 2.4rem;
