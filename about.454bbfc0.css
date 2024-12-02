@@ -13476,17 +13476,17 @@ thead .h-table {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #ff00a2;
   font-family: JapaneseFont, sans-serif;
   font-size: 3rem;
 }
 
 .navbar-brand:hover {
-  color: #ff00a2;
+  color: #fff;
 }
 
 .navbar-brand.active, .navbar-brand.show {
-  color: #ff00a2 !important;
+  color: #fff !important;
 }
 
 @media screen and (width <= 575px) {

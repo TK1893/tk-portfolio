@@ -13309,8 +13309,9 @@ a {
 }
 
 .animated-text-6 a i {
-  animation: 3s 1s infinite blinkingAndPumpingText, 5s ease-out 7s infinite shootOutRight;
+  animation: 3s 1s infinite blinkingAndPumpingText, 5s ease-out 6s infinite shootOutRight;
   display: inline-block;
+  transform: scaleX(-1);
 }
 
 .animated-text-1, .animated-text-3, .animated-text-5, .animated-text-7 {
@@ -13368,17 +13369,17 @@ a {
 @keyframes shootOutRight {
   0% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0)scaleX(-1);
   }
 
-  20% {
+  30% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0)scaleX(-1);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(1000%);
+    transform: translateX(-1000%)scaleX(-1);
   }
 }
 
@@ -13392,17 +13393,17 @@ a {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #ff00a2;
   font-family: JapaneseFont, sans-serif;
   font-size: 3rem;
 }
 
 .navbar-brand:hover {
-  color: #ff00a2;
+  color: #fff;
 }
 
 .navbar-brand.active, .navbar-brand.show {
-  color: #ff00a2 !important;
+  color: #fff !important;
 }
 
 @media screen and (width <= 575px) {

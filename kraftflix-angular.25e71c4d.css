@@ -13195,6 +13195,43 @@ textarea.form-control-lg {
   font-style: normal;
 }
 
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+.slide-in-left {
+  animation-name: slideInLeft;
+}
+
+.slide-in-right {
+  animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 body {
   color: #fff;
   background-color: #000;
@@ -13362,17 +13399,17 @@ a:hover {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #ff00a2;
   font-family: JapaneseFont, sans-serif;
   font-size: 3rem;
 }
 
 .navbar-brand:hover {
-  color: #ff00a2;
+  color: #fff;
 }
 
 .navbar-brand.active, .navbar-brand.show {
-  color: #ff00a2 !important;
+  color: #fff !important;
 }
 
 @media screen and (width <= 575px) {
