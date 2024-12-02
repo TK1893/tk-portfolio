@@ -13195,43 +13195,6 @@ textarea.form-control-lg {
   font-style: normal;
 }
 
-.animated {
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
-}
-
-.slide-in-left {
-  animation-name: slideInLeft;
-}
-
-.slide-in-right {
-  animation-name: slideInRight;
-}
-
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 body {
   color: #fff;
   background-color: #000;
